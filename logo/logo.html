@@ -39,9 +39,11 @@
 		// Here, we'll first begin drawing the path and then use the arc() function to draw the circle. The arc function accepts 6 parameters, x position, y position, radius, start angle, end angle and a boolean for anti-clockwise direction.
 		ctx.beginPath();
 		ctx.arc(x, y, this.radius, 0, Math.PI*2, false);
-		ctx.fillStyle = this.color;
-		ctx.fill();
-		ctx.closePath();
+		//ctx.fillStyle = this.color;
+		//ctx.fill();
+		//ctx.closePath();
+		ctx.strokeStyle=this.color;
+		ctx.stroke();
 	}
     };
     function drawLine(x1,y1,x2,y2){
@@ -82,8 +84,8 @@
             h2=h2-1;
 
             //connect by lineTo
-            drawLine(W/2,H/2, W/2, h1);
-            drawLine(W/2,H/2, W/2, h2);
+            drawLine(W/2,H/2+ball.radius, W/2, h1-ball.radius);
+            drawLine(W/2,H/2-ball.radius, W/2, h2+ball.radius);
         }
         else{
             //call next Animation
@@ -105,8 +107,8 @@
             ball.draw(W/2,H/2);
             ball.draw(W/2,h1);
             ball.draw(W/2,h2);
-            drawLine(W/2,H/2, W/2, h1);
-            drawLine(W/2,H/2, W/2, h2);
+            drawLine(W/2,H/2+ball.radius, W/2, h1-ball.radius);
+            drawLine(W/2,H/2-ball.radius, W/2, h2+ball.radius);
 
             //Draw new element
             ball.draw(w1,h2);
@@ -116,8 +118,8 @@
             w2=w2-1;
 
             //Draw Line
-            drawLine(W/2,h2,w1,h2);
-            drawLine(W/2,h2,w2,h2);
+            drawLine(W/2+ball.radius,h2,w1-ball.radius,h2);
+            drawLine(W/2-ball.radius,h2,w2+ball.radius,h2);
         }
         else{
             //call next Animation
@@ -137,11 +139,10 @@
             ball.draw(W/2,h2);
             ball.draw(w1,h2);
             ball.draw(w2,h2);
-            drawLine(W/2,H/2, W/2, h1);
-            drawLine(W/2,H/2, W/2, h2);
-            drawLine(W/2,h2,w1,h2);
-            drawLine(W/2,h2,w2,h2);
-
+            drawLine(W/2,H/2+ball.radius, W/2, h1-ball.radius);
+            drawLine(W/2,H/2-ball.radius, W/2, h2+ball.radius);
+	    drawLine(W/2+ball.radius,h2,w1-ball.radius,h2);
+            drawLine(W/2-ball.radius,h2,w2+ball.radius,h2);
             //draw new element
             ball.draw(w1,h3);
             ball.draw(w2,h3);
@@ -149,8 +150,8 @@
             h3=h3+1;
 
             //draw Line
-            drawLine(w1,h2,w1,h3);
-            drawLine(w2,h2,w2,h3);
+            drawLine(w1,h2+ball.radius,w1,h3-ball.radius);
+            drawLine(w2,h2+ball.radius,w2,h3-ball.radius);
         }
     }
 
