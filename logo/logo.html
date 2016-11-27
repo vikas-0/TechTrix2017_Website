@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+      }
+
+      /* Some basic styling */
+#canvas {
+	display: block;
+	border: 1px solid blue;
+	margin: 50px auto;
+}
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script>
+    var canvas = document.getElementById("canvas"),
+    ctx = canvas.getContext("2d");
+    var W = 500,H = 500;
+    var off1=90,off2=80,off3=50;    
+    canvas.height = H; canvas.width = W;
+    
+    reqAnimFrame = window.mozRequestAnimationFrame    ||
+                window.webkitRequestAnimationFrame ||
+                window.msRequestAnimationFrame     ||
+                window.oRequestAnimationFrame
+                ;    
+    var ball = {};
+    ball = {
+	    radius: 5,
+	    color: "White",
+	
+	draw: function(x,y) {
+		// Here, we'll first begin drawing the path and then use the arc() function to draw the circle. The arc function accepts 6 parameters, x position, y position, radius, start angle, end angle and a boolean for anti-clockwise direction.
+		ctx.beginPath();
+		ctx.arc(x, y, this.radius, 0, Math.PI*2, false);
+		ctx.fillStyle = this.color;
+		ctx.fill();
+		ctx.closePath();
+	}
+    };
+    function drawLine(x1,y1,x2,y2){
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.lineWidth=2;
+        ctx.strokeStyle=ball.color;
+        ctx.stroke();
+    }
+
+    function clearCanvas() {
+        ctx.clearRect(0, 0, W, H);
+    }
+
+    //Draw a ball at center
+    clearCanvas()
+    ball.draw(W/2,H/2);
+
+    //1st Vertical Line
+    var h1=(H/2);
+    var h2=(H/2);
+    var h3=h2-off1;
+    console.log(h2);
+    function FirstVerti(){
+        if(h1<((H/2) + off1) && h2>((H/2) - off1)){
+            reqAnimFrame(FirstVerti);
+            
+            //Draw base canvas
+            clearCanvas();
+            ball.draw(W/2,H/2);
+            
+            //Draw new element
+            ball.draw(W/2,h1);
+            ball.draw(W/2,h2);
+            
+            h1=h1+1;
+            h2=h2-1;
+
+            //connect by lineTo
+            drawLine(W/2,H/2, W/2, h1);
+            drawLine(W/2,H/2, W/2, h2);
+        }
+        else{
+            //call next Animation
+            HorizontalLine();
+        }
+    } 
+
+
+    //horizontal Line
+    var w1=W/2;
+    var w2=W/2;
+    //console.log(h2);
+    function HorizontalLine(){
+        if(w1<((W/2) + off2) && w2>((W/2) - off2)){
+            reqAnimFrame(HorizontalLine);
+
+            //Draw base canvas
+            clearCanvas();
+            ball.draw(W/2,H/2);
+            ball.draw(W/2,h1);
+            ball.draw(W/2,h2);
+            drawLine(W/2,H/2, W/2, h1);
+            drawLine(W/2,H/2, W/2, h2);
+
+            //Draw new element
+            ball.draw(w1,h2);
+            ball.draw(w2,h2);
+
+            w1=w1+1;
+            w2=w2-1;
+
+            //Draw Line
+            drawLine(W/2,h2,w1,h2);
+            drawLine(W/2,h2,w2,h2);
+        }
+        else{
+            //call next Animation
+            SecVertical();
+        }
+    }
+
+    //2nd Vertical Line
+    function SecVertical(){
+        if(h3<h2+off3){
+            reqAnimFrame(SecVertical);
+
+            //Draw Base canvas
+            clearCanvas();
+            ball.draw(W/2,H/2);
+            ball.draw(W/2,h1);
+            ball.draw(W/2,h2);
+            ball.draw(w1,h2);
+            ball.draw(w2,h2);
+            drawLine(W/2,H/2, W/2, h1);
+            drawLine(W/2,H/2, W/2, h2);
+            drawLine(W/2,h2,w1,h2);
+            drawLine(W/2,h2,w2,h2);
+
+            //draw new element
+            ball.draw(w1,h3);
+            ball.draw(w2,h3);
+
+            h3=h3+1;
+
+            //draw Line
+            drawLine(w1,h2,w1,h3);
+            drawLine(w2,h2,w2,h3);
+        }
+    }
+
+    //start the Animation
+    FirstVerti();
+    </script>
+  </body>
+</html>      
