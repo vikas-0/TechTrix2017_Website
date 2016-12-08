@@ -10,15 +10,15 @@
       }
 
       /* Some basic styling */
-#canvas {
+/*#canvas {
 	display: block;
 	border: 1px solid blue;
 	margin: 50px auto;
-}
+}*/
     </style>
   </head>
   <body>
-    <div>
+    <div style="position:relative;">
         <svg xmlns="http://www.w3.org/2000/svg" id="svg2" enable-background="new 0 0 595.275 841.89" viewBox="0 0 595.275 841.89" x="0px" y="0px" width="595.275px" height="841.89px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="0.91 r13725" version="1.1" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" sodipodi:docname="Tech Trix.svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <sodipodi:namedview id="base" inkscape:pageopacity="0.0" inkscape:current-layer="layer1-8" inkscape:pageshadow="2" inkscape:window-width="1920" inkscape:window-height="1017" inkscape:document-units="px" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:zoom="1.4142136" inkscape:cx="78.976041" inkscape:cy="865.40963" showgrid="false">
 	</sodipodi:namedview>
@@ -359,21 +359,26 @@
 <animate attributeName="y2" from="237.397" to="263.257" begin="5.6s" dur="0.2s" fill="freeze"/>
 </line>
 
-<line fill="none" stroke="#ffffff" stroke-width="2" x1="114.874" y1="263.257" x2="114.874" y2="263.257">
+<line  fill="none" stroke="#ffffff" stroke-width="2" x1="114.874" y1="263.257" x2="114.874" y2="263.257">
 <animate attributeName="x2" from="114.874" to="198.11" begin="5.6s" dur="0.2s" fill="freeze"/>
-<animate attributeName="y2" from="263.257" to="288.172" begin="5.6s" dur="0.2s" fill="freeze"/>
+<animate attributeName="y2" from="263.257" to="288.172" begin="5.6s" dur="0.2s" onend='animateT()' fill="freeze"/>
 </line>
 
 </svg>
 
+    <canvas id="canvas" style="position:absolute; left:87px; top:90px; z-index: 4;"></canvas>
     </div>
 
-    <canvas id="canvas"></canvas>
+
     <script>
+    
+    function animateT(){
+
+    
     var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext("2d");
-    var W = 210,H = 210;
-    var off1=90,off2=80,off3=50;    
+    var W = 150,H = 150;
+    var off1=65,off2=50,off3=40;    
     canvas.height = H; canvas.width = W;
     
     reqAnimFrame = window.mozRequestAnimationFrame    ||
@@ -508,6 +513,7 @@
 
     //start the Animation
     FirstVerti();
+    }
     </script>
   </body>
 </html>      
