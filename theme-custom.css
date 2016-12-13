@@ -1,0 +1,7 @@
+@import url("theme-luiza.min.css");
+.factory-flag{ visibility: hidden; }
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
