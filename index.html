@@ -25,6 +25,38 @@
 		<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png" />
 		<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
 		<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
+		<script src='scripts\jquery.particleground.js'></script>
+		<style>
+		/*#home{
+			  width: 100%;
+  height: 100%;
+  overflow: hidden;
+		}*/
+		/*#about{
+			position: absolute;
+			left:0;
+			top:0;
+					}*/
+		#particles {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#home {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#homeintro{
+	visibility: hidden;
+}
+		</style>
 	</head>
 	<body class="state1 background-100-e">
 		
@@ -187,13 +219,24 @@
 			</ul>
 		</div>
 		<!-- BEGIN: Page content -->
+<!--particle Ground-->
+
+<div id="particles">
+  
+
+
+<!---->
+
 		<section id="home">
+
+
+
 			<div class="view">
 
-				<img alt class="bg" src="images/bg/cover/War1.jpg" />
+				<!--<img alt class="bg" src="images/bg/cover/War1.jpg" />
 				<img alt class="bg"  src="images/bg/cover/techtrix.jpg" />
 				<img alt class="bg" src="images/bg/cover/Race5.jpg" />
-				
+				-->
 				<div class="content home-suzi full-size colors-d background-0">
 					<div class="container">
 						<div style="margin-left:35%;position:relative; height:350px; width:350px;">
@@ -575,6 +618,7 @@
 			//ctx.fillStyle = this.color;
 			//ctx.fill();
 			//ctx.closePath();
+			ctx.lineWidth=2
 			ctx.strokeStyle=this.color;
 			ctx.stroke();
 		}
@@ -583,7 +627,7 @@
 			ctx.beginPath();
 			ctx.moveTo(x1, y1);
 			ctx.lineTo(x2, y2);
-			ctx.lineWidth=2;
+			ctx.lineWidth=5;
 			ctx.strokeStyle=ball.color;
 			ctx.stroke();
 		}
@@ -600,7 +644,6 @@
 		var h1=(H/2);
 		var h2=(H/2);
 		var h3=h2-off1;
-		console.log(h2);
 		function FirstVerti(){
 			if(h1<((H/2) + off1) && h2>((H/2) - off1)){
 				reqAnimFrame(FirstVerti);
@@ -692,9 +735,10 @@
 		FirstVerti();
 		}
 			</script>			
-						<!--<h2><span class="thin-font-weight">We <span class="highlight">Are</span></span></h2>
-						<h1 class="text-center">SKROLL<span class="highlight thin-font-weight">EX</span></h1>
-						<div class="row">
+					<div id='homeintro'>		
+						<h2 style="font-size:2em;margin-bottom:-2em"><span class="thin-font-weight">Into the <span class="highlight">Next Dimension</span></span></h2>
+						<h1 class="text-center" style="font-size:3em;">Tech<span class="highlight thin-font-weight">Trix</span></h1>
+					</div>	<!--<div class="row">
 							<div class="col-md-4 col-md-offset-4">
 								<p class="title text-center">
 									Integer ligula ante, posuere et ante quis, eleifend eleifend ipsum. In sed odio mi vivamus dapibus gravida.
@@ -706,6 +750,7 @@
 				</div>
 			</div>
 		</section>
+</div>
 		<section id="event">
 			<div class="view">
 				<img alt class="bg" src="images/bg/events/CREATE.jpg" />
@@ -1562,7 +1607,8 @@ Come, witness true exhilaration and feel the adrenaline rush as the brightest mi
 		</section>-->
 		<section id="contact">
 			<div class="view">
-				<img alt class="bg" src="images/bg/pexels/art-brush-colors-3112.jpg" /><img alt class="bg" src="images/bg/picjumbo/picjumbo.com_IMG_4563.jpg" /><img alt class="bg" src="images/bg/picjumbo/picjumbo.com_HNCK1805.jpg" />
+				<img alt class="bg"  src="images/bg/cover/techtrix.jpg" />
+				<img alt class="bg" src="images/bg/cover/Race5.jpg" />
 				<div class="content full-size colors-h">
 					<div class="container">
 						<h2>Contact</h2>
@@ -1772,6 +1818,22 @@ Come, witness true exhilaration and feel the adrenaline rush as the brightest mi
 
   		ga('create', 'UA-89118177-1', 'auto');
   		ga('send', 'pageview');
+
+// Particle background
+document.addEventListener('DOMContentLoaded', function () {
+  particleground(document.getElementById('particles'), {
+    dotColor: '#c7af8b',
+    lineColor: '#c7af8b',
+	density: 18000
+  });
+
+  var intro = document.getElementById('home');
+  intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
+}, false);
+
+setTimeout(function(){
+$('#homeintro').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 'slow');
+},9000)
 
 	</script>
 
