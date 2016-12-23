@@ -374,7 +374,7 @@
 	</g>
 	<!-- First Stage -->
 	<line fill="none" stroke="#ffffff" stroke-width="2" x1="180.12" y1="4.658" x2="180.12" y2="4.658">
-	<animate attributeName="x2" from="180.12" to="248.746" begin="0.2s" dur="0.2s" fill="freeze" onbegin="animationCalled()" />
+	<animate attributeName="x2" from="180.12" to="248.746" begin="0.2s" dur="0.2s" fill="freeze" />
 	<animate attributeName="y2" from="4.658" to="28.987" begin="0.2s" dur="0.2s" fill="freeze"/>
 	</line>
 
@@ -595,7 +595,7 @@
 		<script>
 		
 		function animateT(){
-
+		animationCalled();
 		
 		var canvas = document.getElementById("canvas"),
 		ctx = canvas.getContext("2d");
@@ -1845,7 +1845,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			 if (!animationComplete){
 				 animateT();
 			 }
-		 },2000);
+		 },1000*15);
 	 });
 
 	 $(document).ready(function(){
