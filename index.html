@@ -1839,13 +1839,14 @@ document.addEventListener('DOMContentLoaded', function () {
 	var animationComplete=false;
 	function animationCalled(){
 		animationComplete=true;
+		console.log('true');
 	}
 	 $('svg').load(function(){
 	 	setTimeout(function(){
 			 if (!animationComplete){
 				 animateT();
 			 }
-		 },1000*15);
+		 },1000*12);
 	 });
 
 	 $(document).ready(function(){
