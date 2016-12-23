@@ -60,6 +60,13 @@
 		#homeintro{
 			visibility: hidden;
 		}
+
+		#logoAnime{
+			/*margin-left:0;*/
+			position:relative; 
+			height:350px; 
+			width:350px;
+		}
 		</style>
 	</head>
 	<body class="state1 background-100-e">
@@ -243,7 +250,7 @@
 				-->
 				<div class="content home-suzi full-size colors-d background-0">
 					<div class="container">
-						<div style="margin-left:35%;position:relative; height:350px; width:350px;">
+						<div id="logoAnime">
 			<svg id="svg2" x="0px" y="0px" width="500px" height="500px">
 	<g id="layer1" inkscape:groupmode="layer" inkscape:label="Layer 1">
 		<g id="layer1-8" transform="translate(-0.590663 0.714298)" inkscape:label="Layer 1">
@@ -251,7 +258,7 @@
 				<g id="layer1-2" transform="translate(-155.525 -89.5863)" inkscape:label="Layer 1">
 					
 						<ellipse id="path4138" fill="#ffffff" stroke="#ffffff" stroke-width="0.7344" cx="168.434" cy="198.414" rx="0" ry="0">
-						<animate attributeName="rx" begin="4s" dur="0.2s" from="0" to="3.706" fill="freeze"/>
+						<animate attributeName="rx" begin="4s" dur="0.2s" from="0" to="3.706" fill="freeze" />
 						<animate attributeName="ry" begin="4s" dur="0.2s" from="0" to="3.706" fill="freeze"/>
 						</ellipse>
 					
@@ -375,7 +382,7 @@
 	</g>
 	<!-- First Stage -->
 	<line fill="none" stroke="#ffffff" stroke-width="2" x1="180.12" y1="4.658" x2="180.12" y2="4.658">
-	<animate attributeName="x2" from="180.12" to="248.746" begin="0.2s" dur="0.2s" fill="freeze"/>
+	<animate attributeName="x2" from="180.12" to="248.746" begin="0.2s" dur="0.2s" fill="freeze" onbegin="animationCalled()" />
 	<animate attributeName="y2" from="4.658" to="28.987" begin="0.2s" dur="0.2s" fill="freeze"/>
 	</line>
 
@@ -733,7 +740,7 @@
 				drawLine(w1,h2+ball.radius,w1,h3-ball.radius);
 				drawLine(w2,h2+ball.radius,w2,h3-ball.radius);
 				//next animation (make text appear)
-				setTimeout($('#homeintro').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 3000),1000);
+				$('#homeintro').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 7000);
 			}
 		}
 
@@ -742,7 +749,7 @@
 		}
 			</script>			
 					<div id='homeintro'>		
-						<h2 style="font-size:2em;margin-bottom:-2em"><span class="thin-font-weight">Into the <span class="highlight">Next Dimension</span></span></h2>
+						<h2 style="font-size:2em;margin-bottom:-5px"><span class="thin-font-weight">Into the <span class="highlight">Next Dimension</span></span></h2>
 						<h1 class="text-center" style="font-size:3em;">Tech<span class="highlight thin-font-weight">Trix</span></h1>
 					</div>	<!--<div class="row">
 							<div class="col-md-4 col-md-offset-4">
@@ -1836,8 +1843,26 @@ document.addEventListener('DOMContentLoaded', function () {
   var intro = document.getElementById('home');
   intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
 }, false);
+//animation refresh
+	var animationComplete=false;
+	function animationCalled(){
+		animationComplete=true;
+	}
+	 $('svg').load(function(){
+	 	setTimeout(function(){
+			 if (!animationComplete){
+				 animateT();
+			 }
+		 },2000);
+	 });
 
+	 $(document).ready(function(){
+		 var animeSize=324;
+		 var vwSize = $('#home').width();
+		 //((vwSize/2)-(animeSize/2))
+		 var margin =((vwSize/2)-(animeSize/2))-56;
+		 $('#logoAnime').css('margin-left',margin+'px');
+	 });
 	</script>
-
 	</body>
 </html>
