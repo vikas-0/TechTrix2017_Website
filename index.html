@@ -589,6 +589,7 @@
 	</svg>
 
 		<canvas id="canvas" style="position:absolute; left:87px; top:90px; z-index: 4;"></canvas>
+		<img src="http://www.pngall.com/wp-content/uploads/2016/05/Christmas-Hat.png" id="santaHat" style="position:absolute; left:1700px; top:-50px; z-index: 500; width:200px; height:auto"/>
 		</div>
 
 
@@ -733,6 +734,8 @@
 				drawLine(w2,h2+ball.radius,w2,h3-ball.radius);
 				//next animation (make text appear)
 				$('#homeintro').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 7000);
+				// left:170px; top:-50px;
+				$('#santaHat').css({left:'17000px', top:'-50px'}).animate({left:'170px', top:'-40px'},4000);
 			}
 		}
 
