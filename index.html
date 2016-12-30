@@ -54,7 +54,7 @@
 		}
 
 		#logoAnime{
-			/*margin-left:0;*/
+			margin: auto;
 			position:relative; 
 			height:350px; 
 			width:350px;
@@ -1845,22 +1845,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				 animateT();
 			 }
 		 },1000*12);
-	 });
-
-	 function setMargin(){
-		 var animeSize=324;
-		 var vwSize = $('#home').width();
-		 var balancingNo =54;
-		 if (vwSize <330){
-			 balancingNo=0;
-		 }
-		 var margin =((vwSize/2)-(animeSize/2))-balancingNo;
-		 $('#logoAnime').css('margin-left',margin+'px');
-		 $('#logoAnime').css('margin-top','10px');
-	 }
-	 $(document).ready(setMargin());
-	 $(window).resize(function(){
-		 setMargin();
 	 });
 	</script>
 	</body>
