@@ -31,6 +31,18 @@
 		<link rel="stylesheet" href="theme-custom.css" />
 		<link rel="shortcut icon" href="favico.ico" type="image/x-icon" />
 		<script src='scripts\jquery.particleground.js'></script>
+		<script>
+		// Particle background
+document.addEventListener('DOMContentLoaded', function () {
+  particleground(document.getElementById('particles'), {
+    dotColor: '#424949',
+    lineColor: '#424949',
+  });
+
+  var intro = document.getElementById('home');
+  intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
+}, false);
+		</script>
 		<style>
 
 		#particles {
@@ -170,6 +182,7 @@
 			</div>
 			<div class="overlay-view">
 				<div class="map-canvas" data-latitude="42.487606" data-longitude="-71.115661" data-zoom="14">
+					<p>Hello</p>
 					<div class="map-marker" data-latitude="42.487606" data-longitude="-71.115661" data-text="Our awesome location"></div>
 					<div class="map-marker" data-latitude="42.485100" data-longitude="-71.113256" data-text="Our sales office"></div>
 				</div>
@@ -178,39 +191,6 @@
 		<div class="overlay-window credits-overlay colors-g background-95-g">
 			<div class="overlay-control background-90-b">
 				<a class="cross" href="#"></a>
-			</div>
-			<div class="overlay-view">
-				<div class="content-container">
-					<h3>Credits</h3>
-					<ul>
-						<li>
-							Photos by:
-							<ul>
-								<li><a target="_blank" href="../../www.flickr.com/photos/katya_alagich/index.html">Katya Alagich</a>, <a target="_blank" href="../../creativecommons.org/licenses/by/2.0/index.html">CC BY 2.0 License</a></li>
-								<li><a target="_blank" href="../../www.flickr.com/photos/65047661%40N00/index.html">Jim Lukach</a>, <a target="_blank" href="../../creativecommons.org/licenses/by/2.0/index.html">CC BY 2.0 License</a></li>
-								<li><a target="_blank" href="../../www.flickr.com/photos/johanl/index.html">Johan Larsson</a>, <a target="_blank" href="../../creativecommons.org/licenses/by/2.0/index.html">CC BY 2.0 License</a></li>
-								<li><a target="_blank" href="../../www.flickr.com/photos/johny/index.html">John Kraus</a>, <a target="_blank" href="../../creativecommons.org/licenses/by/2.0/index.html">CC BY 2.0 License</a></li>
-								<li><a target="_blank" href="../../www.flickr.com/photos/geishaboy500/index.html">THOR</a>, <a target="_blank" href="../../creativecommons.org/licenses/by/2.0/index.html">CC BY 2.0 License</a></li>
-								<li><a target="_blank" href="../../www.flickr.com/photos/stf-o/index.html">stephane</a>, <a target="_blank" href="../../creativecommons.org/licenses/by/2.0/index.html">CC BY 2.0 License</a></li>
-								<li><a target="_blank" href="../../www.pexels.com/index.html">Pexels</a>, <a target="_blank" href="../../www.pexels.com/photo-license/index.html">CC0 License</a></li>
-								<li><a target="_blank" href="../../stocksnap.io/index.html">Stocksnap</a>, <a target="_blank" href="../../stocksnap.io/license.html">CC0 License</a></li>
-								<li><a target="_blank" href="../../picjumbo.com/index.html">Picjumbo</a>, <a target="_blank" href="../../picjumbo.com/about-author/index.html">Picjumbo License</a></li>
-							</ul>
-						</li>
-						<li>
-							Video by:
-							<ul>
-								<li><a target="_blank" href="../../mazwai.com/index.html">Mazwai</a>, <a target="_blank" href="../../creativecommons.org/licenses/by/3.0/index.html">CC BY 3.0 License</a></li>
-							</ul>
-						</li>
-						<li>
-							Icons by:
-							<ul>
-								<li><a target="_blank" href="../../designmodo.com/index.html">Designmodoh</a>, <a target="_blank" href="../../designmodo.com/linecons-free/index.html">License</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
 			</div>
 		</div>
 		<div class="gate colors-e background-solid">
@@ -1669,9 +1649,9 @@ Come, witness true exhilaration and feel the adrenaline rush as the brightest mi
 								</div>
 							</div>
 						</div>
-						<!--<div class="text-center">
+						<div class="text-center">
 							<a class="map-open button background-lite-b border-heading-b heading-b" data-map-overlay=".map-overlay" href="#">Locate Us on Map</a>
-						</div>-->
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1824,16 +1804,7 @@ Come, witness true exhilaration and feel the adrenaline rush as the brightest mi
   		ga('create', 'UA-89118177-1', 'auto');
   		ga('send', 'pageview');
 
-// Particle background
-document.addEventListener('DOMContentLoaded', function () {
-  particleground(document.getElementById('particles'), {
-    dotColor: '#424949',
-    lineColor: '#424949',
-  });
 
-  var intro = document.getElementById('home');
-  intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
-}, false);
 //animation refresh
 	var animationComplete=false;
 	function animationCalled(){
