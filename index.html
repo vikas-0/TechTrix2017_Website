@@ -180,11 +180,7 @@
 				<a class="cross" href="#"></a>
 			</div>
 			<div class="overlay-view">
-				<div class="map-canvas" data-latitude="42.487606" data-longitude="-71.115661" data-zoom="14">
-					<p>Hello</p>
-					<div class="map-marker" data-latitude="42.487606" data-longitude="-71.115661" data-text="Our awesome location"></div>
-					<div class="map-marker" data-latitude="42.485100" data-longitude="-71.113256" data-text="Our sales office"></div>
-				</div>
+					<div id="map" style="height: 100%;"></div>
 			</div>
 		</div>
 		<div class="overlay-window credits-overlay colors-g background-95-g">
@@ -1662,7 +1658,7 @@ Come, witness true exhilaration and feel the adrenaline rush as the brightest mi
 							</div>
 						</div>
 						<div class="text-center">
-							<a class="map-open button background-lite-b border-heading-b heading-b" data-map-overlay=".map-overlay" href="#">Locate Us on Map</a>
+							<a class="button open-overlay-window heading background-lite-b border-heading-b heading-b" data-overlay-window=".map-overlay">Locate Us on Map</a>
 						</div>
 					</div>
 				</div>
@@ -1763,6 +1759,25 @@ Come, witness true exhilaration and feel the adrenaline rush as the brightest mi
 		<script src="bower_components/textillate/assets/jquery.fittext.js"></script>
 		<script src="bower_components/textillate/jquery.textillate.js"></script>
 		<script src="lib/prism/prism.js"></script>
+		<script>
+
+		function initMap() {
+			var myLatLng = {lat: -25.363, lng: 131.044};
+
+			var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 4,
+			center: myLatLng
+			});
+
+			var marker = new google.maps.Marker({
+			position: myLatLng,
+			map: map,
+			title: 'Hello World!'
+			});
+		}
+		</script>
+		 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn02AlfVh_oWroJrCd9kNQQ9d55haPiUs&callback=initMap">
+    </script>
 		<script>
 		(function()
 		{
