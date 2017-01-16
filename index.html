@@ -31,6 +31,37 @@
 		<link rel="stylesheet" href="theme-custom.css" />
 		<link rel="shortcut icon" href="favico.ico" type="image/x-icon" />
 		<script src='scripts\jquery.particleground.js'></script>
+		<style>
+		#particles {
+			width: 100%;
+			height: 100vh;
+			overflow: hidden;
+			position: relative;
+		}
+
+		#home {
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding: 0 20px;
+		width: 100%;
+		text-align: center;
+		}
+
+		#homeintro{
+			visibility: hidden;
+		}
+
+		#logoAnime{
+			margin-left: auto;
+			margin-right: auto;
+			position:relative; 
+			height:350px; 
+			width:350px;
+			margin-top: 0px;
+		}
+		</style>
+
 		<script>
 		// Particle background
 		document.addEventListener('DOMContentLoaded', function () {
@@ -38,10 +69,7 @@
 			dotColor: '#424949',
 			lineColor: '#424949',
 		});
-
-		var intro = document.getElementById('home');
-		intro.style.marginTop = ((- intro.offsetHeight / 2 )+10)+ 'px';
-		}, false);
+	}, false);
 		</script>
 		<script>
 		
@@ -191,41 +219,6 @@
 		FirstVerti();
 		}
 			</script>
-		<style>
-		#particles {
-			width: 100%;
-			height: 100vh;
-			overflow: hidden;
-			position: relative;
-		}
-
-		#home {
-		position: absolute;
-		left: 0;
-		top: 50%;
-		padding: 0 20px;
-		width: 100%;
-		text-align: center;
-		}
-
-		#homeintro{
-			visibility: hidden;
-		}
-
-		#logoAnime{
-			margin-left: auto;
-			margin-right: auto;
-			position:relative; 
-			height:350px; 
-			width:350px;
-			margin-top: 0px;
-		}
-		/*@media only screen and (min-width: 768px) {
-			#logoAnime{
-				margin-top: 30px;
-			}*/
-		}
-		</style>
 	</head>
 	<body class="state1 background-100-e">
 		
