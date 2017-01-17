@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="styles/style.min.css"/>
     <link rel="stylesheet" href="theme-custom.css"/>
     <link rel="shortcut icon" href="favico.ico" type="image/x-icon"/>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src='scripts/jquery.particleground.js'></script>
     <style>
         #particles {
@@ -219,6 +220,10 @@
                     drawLine(w2, h2 + ball.radius, w2, h3 - ball.radius);
                     //next animation (make text appear)
                     $('#homeintro').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 7000);
+                    setTimeout(function(){
+                        $('#TempPopup').addClass('show');
+                    },4000);
+
                 }
             }
 
@@ -316,6 +321,32 @@
 </nav>
 <!-- END: Top menu -->
 <ul id="dot-scroll" class="colors-e background-solid"></ul>
+
+<div class="overlay-window map-overlay colors-h background-75-h">
+    <div class="overlay-control background-90-g">
+        <a class="cross" href="#"></a>
+    </div>
+    <div class="overlay-view">
+        <div id="map" style="height: 70vh; width: 70vw; margin :auto;"></div>
+    </div>
+</div>
+
+<div id="TempPopup" class="overlay-window popup-overlay colors-h background-75-h">
+    <div class="overlay-control background-90-g">
+        <a class="cross" href="javascript:$('#TempPopup').removeClass('show')"></a>
+    </div>
+    <div class="overlay-view">
+        <!--<h2 style="font-size:2em;margin:0;padding:0"><span class="thin-font-weight">Into the <span-->
+                <!--class="highlight">Next Dimension</span></span></h2>-->
+        <p style="font-size: xx-large" class="text-center" ><span
+                class="highlight thin-font-weight">National Workshop Series 2016-2017</p>
+        <p style="font-size: large" class="text-center">Organised by <span class="highlight">RoboKart</span> in association with <span class="highlight">Innovision Cell, IIT Bombay</span></p>
+        <p style="font-size: medium" class="text-center">On 22nd and 23rd February. For Registraion and more info, see our Facebook Post</p>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftechtrix.rcciit%2Fposts%2F1819512198296493&width=700" width="700" height="400" style="border:none;overflow:scroll; margin:0 auto;display:block" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
+    </div>
+</div>
+
+
 <div class="overlay-window gallery-overlay colors-g background-95-g" data-overlay-zoom="#work .content">
     <div class="overlay-control background-90-b">
         <a class="previos" href="#"></a>
@@ -329,14 +360,7 @@
         <li class="background-highlight-e"></li>
     </ul>
 </div>
-<div class="overlay-window map-overlay colors-h background-75-h">
-    <div class="overlay-control background-90-g">
-        <a class="cross" href="#"></a>
-    </div>
-    <div class="overlay-view">
-        <div id="map" style="height: 70vh; width: 70vw; margin :auto;"></div>
-    </div>
-</div>
+
 <div class="overlay-window credits-overlay colors-g background-95-g">
     <div class="overlay-control background-90-b">
         <a class="cross" href="#"></a>
@@ -369,6 +393,7 @@
             -->
             <div class="content home-suzi full-size colors-d background-0">
                 <div class="container">
+
                     <div id="logoAnime">
 
                         <svg id="svg2" x="0px" y="0px" width="500px" height="500px">
@@ -1967,7 +1992,6 @@
     }
 </script>
 <script src="bower_components/less.js/dist/less.min.js"></script>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="lib/tween/tween.min.js"></script>
 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/modernizr/modernizr.js"></script>
