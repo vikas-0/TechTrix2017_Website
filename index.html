@@ -66,6 +66,11 @@
             width: 350px;
             margin-top: 0;
         }
+
+        #event .title, #event .circle{
+            cursor: pointer;
+        }
+
     </style>
 
     <script>
@@ -1071,12 +1076,12 @@
                         <p class="title"><span>Coding</span></p>
                         <!--<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>-->
                     </div>
-                    <div class="col-md-3 text-center">
+                    <div class="col-md-3 text-center" onclick="$('#TempPopup').addClass('show')">
                         <p>
                             <i class="fa fa-industry circle scroll-in-animation background-20 heading"
                                data-animation="fadeInUp"></i>
                         </p>
-                        <p class="title"><span>Workshops</span></p>
+                        <p class="title" ><span>Workshops</span></p>
                         <!--<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>-->
                     </div>
                 </div>
