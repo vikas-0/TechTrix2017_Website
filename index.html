@@ -70,6 +70,16 @@
             cursor: pointer;
         }
     </style>
+    <script>
+        // Particle background
+        document.addEventListener('DOMContentLoaded', function () {
+            particleground(document.getElementById('particles'), {
+                dotColor: '#424949',
+                lineColor: '#424949'
+            });
+        }, false);
+    </script>
+    <script src="scripts/half-logo.js"></script>
 </head>
 <body class="state1 background-100-e">
 
@@ -1755,11 +1765,11 @@
 </section>
 <!-- END: Page content -->
 <!-- BEGIN: Footer -->
-<!--<footer class="colors-g page-transition non-preloading">
+<footer class="colors-g page-transition non-preloading">
     <div class="container scroll-in-animation" data-animation="fadeInDown">
         <div class="row">
             <div class="col-md-3">
-                <h4>SKROLL<span class="highlight">EX</span></h4>
+                <h4>Tech<span class="highlight">Trix</span></h4>
                 <div class="footer-description">
                     <p>Mauris metus tellus, lacinia nec efficitur quis, rhoncus et mi.</p>
                 </div>
@@ -1783,36 +1793,19 @@
                 </ul>
             </div>
             <div class="col-md-3">
-                <h5>Recent Posts</h5>
+                <h5>Our Sponsers</h5>
                 <ul class="simple">
-                    <li><a href="blog-single-1.html">Post with Featured Image</a></li>
-                    <li><a href="blog-single-2.html">And Post with Slider</a></li>
-                    <li><a href="blog-single-3.html">Post with Vimeo Video</a></li>
-                    <li><a href="blog-single-4.html">Another Post with Image</a></li>
-                    <li><a href="blog.html">More...</a></li>
+                    <li><a></a></li>
+
                 </ul>
             </div>
             <div class="col-md-3">
                 <h5>Photo Stream</h5>
                 <div class="photo">
-                    <div class="col-xs-3 col-sm-2 col-md-4">
-                        <a target="_blank" href="../../www.flickr.com/photos/we-are-envato/12333983853.html" title="Melbourne Meetup by Envato, on Flickr"><img class="fluid-width" src="../../farm8.staticflickr.com/7367/12333983853_8fc462a494_q.jpg" alt="Melbourne Meetup"></a>
-                    </div>
-                    <div class="col-xs-3 col-sm-2 col-md-4">
-                        <a target="_blank" href="../../www.flickr.com/photos/we-are-envato/13090549273.html" title="Around the Envato Office - Highfive! by Envato, on Flickr"><img class="fluid-width" src="../../farm8.staticflickr.com/7325/13090549273_ee5c732ce1_q.jpg" alt="Around the Envato Office - Highfive!"></a>
-                    </div>
-                    <div class="col-xs-3 col-sm-2 col-md-4">
-                        <a target="_blank" href="../../www.flickr.com/photos/we-are-envato/12333834195.html" title="Melbourne Meetup by Envato, on Flickr"><img class="fluid-width" src="../../farm4.staticflickr.com/3798/12333834195_7dcb472dd5_q.jpg" alt="Melbourne Meetup"></a>
-                    </div>
-                    <div class="col-xs-3 col-sm-2 col-md-4">
-                        <a target="_blank" href="../../www.flickr.com/photos/we-are-envato/13090422515.html" title="Around the Envato Office - Becca by Envato, on Flickr"><img class="fluid-width" src="../../farm3.staticflickr.com/2279/13090422515_cabc9c447c_q.jpg" alt="Around the Envato Office - Becca"></a>
-                    </div>
-                    <div class="col-xs-3 col-sm-2 col-md-4">
-                        <a target="_blank" href="../../www.flickr.com/photos/we-are-envato/13090762874.html" title="Around the Envato Office - Ben &amp; Jane by Envato, on Flickr"><img class="fluid-width" src="../../farm4.staticflickr.com/3596/13090762874_5f9d99f4e5_q.jpg" alt="Around the Envato Office - Ben &amp; Jane"></a>
-                    </div>
-                    <div class="col-xs-3 col-sm-2 col-md-4">
-                        <a target="_blank" href="../../www.flickr.com/photos/we-are-envato/13090456565.html" title="Around the Envato Office - Selina by Envato, on Flickr"><img class="fluid-width" src="../../farm4.staticflickr.com/3715/13090456565_df81e68627_q.jpg" alt="Around the Envato Office - Selina"></a>
-                    </div>
+                    <p>Photos and videos with the <a href="https://www.instagram.com/explore/tags/techtrix17/" target="_blank">#techtrix17</a> on Instagram</p>
+                    <!-- InstaWidget -->
+                    <a href="https://instawidget.net/v/tag/techtrix17" id="link-34c16f906323d5721791a62f914c32dc7568e97ac61ce8e864cd3d33c822c61e">#techtrix17</a>
+                    <script src="https://instawidget.net/js/instawidget.js?u=34c16f906323d5721791a62f914c32dc7568e97ac61ce8e864cd3d33c822c61e&width=300px"></script>
                 </div>
             </div>
         </div>
@@ -1820,7 +1813,7 @@
     <div class="bottom text-center background-5-b">
         © 2016 All Rights Reserved. <a href="#" class="open-overlay-window heading" data-overlay-window=".credits-overlay">Credits.</a>
     </div>
-</footer>-->
+</footer>
 <!-- END: Footer -->
 <script>
     if (typeof(atob) == "undefined") {
@@ -1844,7 +1837,6 @@
 <script src="bower_components/textillate/assets/jquery.fittext.js"></script>
 <script src="bower_components/textillate/jquery.textillate.js"></script>
 <script src="lib/prism/prism.js"></script>
-<script src="scripts/half-logo.js"></script>
 <script src='scripts/jquery.particleground.js'></script>
 <script>
 
@@ -1933,14 +1925,6 @@
         }, 1000 * 12);
     });
 </script>
-<script>
-    // Particle background
-    document.addEventListener('DOMContentLoaded', function () {
-        particleground(document.getElementById('particles'), {
-            dotColor: '#424949',
-            lineColor: '#424949'
-        });
-    }, false);
-</script>
+
 </body>
 </html>
