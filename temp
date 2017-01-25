@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://skrollex.x40.ru/theme-luiza/portfolio-item-1.html -->
+<html class="background-100-e js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths chrome non-mobile force3d gr__skrollex_x40_ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Skrollex</title>
+		<meta name="description" content="Onepage Parallax Site">
+		<meta name="keywords" content="onepage, parallax">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./portfolio-item-1_files/font-awesome.min.css">
+		<link rel="stylesheet" href="./portfolio-item-1_files/animate.min.css">
+		<link rel="stylesheet" href="./portfolio-item-1_files/jquery.minicolors.css">
+		<link rel="stylesheet" href="./portfolio-item-1_files/slick.css">
+		<link rel="stylesheet" href="./portfolio-item-1_files/slick-theme.css">
+		<link rel="stylesheet" href="./portfolio-item-1_files/bootstrap-custom.min.css">
+		<link rel="stylesheet" href="./portfolio-item-1_files/style.css">
+		<link rel="stylesheet" href="./portfolio-item-1_files/style.min.css">
+		<link rel="stylesheet" href="./portfolio-item-1_files/theme-custom.css">
+		<link rel="shortcut icon" href="http://skrollex.x40.ru/theme-luiza/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="http://skrollex.x40.ru/theme-luiza/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="http://skrollex.x40.ru/theme-luiza/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="http://skrollex.x40.ru/theme-luiza/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="http://skrollex.x40.ru/theme-luiza/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="http://skrollex.x40.ru/theme-luiza/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="http://skrollex.x40.ru/theme-luiza/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="http://skrollex.x40.ru/theme-luiza/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="http://skrollex.x40.ru/theme-luiza/apple-touch-icon-152x152.png">
+	<script type="text/javascript" charset="UTF-8" src="./portfolio-item-1_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./portfolio-item-1_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./portfolio-item-1_files/stats.js"></script><script type="text/javascript" charset="UTF-8" src="./portfolio-item-1_files/AuthenticationService.Authenticate"></script></head>
+	<body class="background-100-e state1" data-gr-c-s-loaded="true">
+		<div class="ext-nav background-95-h page-transition">
+			<div class="view half-height">
+				<img alt="" class="bg static" src="./portfolio-item-1_files/2.jpg" style="transform: translate3d(-307px, -509.667px, 0px) scale(0.680208, 0.680208); opacity: 1; transform-origin: center center 0px;">
+				<div class="content no-top-padding no-bottom-padding  full-height">
+					<div class="container-fluid  full-height">
+						<div class="row full-height">
+							<a href="http://skrollex.x40.ru/theme-luiza/blog.html" class="col-md-6 colors-e background-95-e full-height" data-ss1485309693="1">
+								<div>
+									<span class="side-label">All The Latest</span>
+									<span class="side-title">Blog</span>
+								</div>
+							</a>
+							<a href="http://skrollex.x40.ru/theme-luiza/help.html" class="col-md-6 colors-f background-95-f full-height" data-ss1485309693="1">
+								<div>
+									<span class="side-label">Documentation</span>
+									<span class="side-title">Help</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid  half-height">
+				<div class="row full-height">
+					<a href="http://skrollex.x40.ru/theme-luiza/index.html#how-we-work" class="col-md-4 colors-g background-solid full-height border-bottom border-lite" data-ss1485309693="1">
+						<div>
+							<span class="side-label">Awesome</span>
+							<span class="side-title">How We Work</span>
+						</div>
+					</a>
+					<a href="http://skrollex.x40.ru/theme-luiza/index.html#who-we-are" class="col-md-4 colors-g background-solid full-height border-bottom border-left border-lite" data-ss1485309693="1">
+						<div>
+							<span class="side-label">We Are Designers</span>
+							<span class="side-title">Who We Are</span>
+						</div>
+					</a>
+					<a href="http://skrollex.x40.ru/theme-luiza/index.html#numbers" class="col-md-4 colors-g background-solid full-height border-bottom border-left border-lite" data-ss1485309693="1">
+						<div>
+							<span class="side-label">Some Facts</span>
+							<span class="side-title">Our Numbers</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="page-border bottom colors-e background-solid"><a href="http://skrollex.x40.ru/theme-luiza/portfolio-item-1.html#top" class="hover-effect" data-ss1485309693="1">To <span class="highlight">Top</span></a></div>
+		<div class="page-border left colors-e background-solid">
+			<ul>
+				<li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer" data-ss1485309693="1"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://twitter.com/" target="_blank" rel="noreferrer" data-ss1485309693="1"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="http://www.youtube.com/" target="_blank" rel="noreferrer" data-ss1485309693="1"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="https://vimeo.com/" target="_blank" rel="noreferrer" data-ss1485309693="1"><i class="fa fa-vimeo-square"></i></a></li>
+				<li><a href="http://www.skype.com/" target="_blank" rel="noreferrer" data-ss1485309693="1"><i class="fa fa-skype"></i></a></li>
+			</ul>
+		</div>
+		<!-- BEGIN: Top menu -->
+		<div class="page-border right colors-e background-solid"></div>
+		<nav class="navbar navbar-default navbar-fixed-top page-transition colors-e background-solid" role="navigation" id="top-nav">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="menu-toggle ext-nav-toggle visible-xs-block" data-target=".ext-nav" href="http://skrollex.x40.ru/theme-luiza/portfolio-item-1.html#" data-ss1485309693="1"><span></span></a>
+					<a class="menu-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" href="http://skrollex.x40.ru/theme-luiza/portfolio-item-1.html#" data-ss1485309693="1"><span></span></a>
+					<a class="navbar-brand" href="http://skrollex.x40.ru/theme-luiza/index.html" data-ss1485309693="1">SKROLL<span class="highlight">EX</span></a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="http://skrollex.x40.ru/theme-luiza/index.html" class="hover-effect" data-ss1485309693="1">Home</a></li>
+						<li><a href="http://skrollex.x40.ru/theme-luiza/index.html#about" class="hover-effect" data-ss1485309693="1">About</a></li>
+						<li><a href="http://skrollex.x40.ru/theme-luiza/index.html#team" class="hover-effect" data-ss1485309693="1">Team</a></li>
+						<li><a href="http://skrollex.x40.ru/theme-luiza/index.html#services" class="hover-effect" data-ss1485309693="1">Services</a></li>
+						<li><a href="http://skrollex.x40.ru/theme-luiza/index.html#work" class="hover-effect" data-ss1485309693="1">Work</a></li>
+						<li><a href="http://skrollex.x40.ru/theme-luiza/index.html#process" class="hover-effect" data-ss1485309693="1">Process</a></li>
+						<li><a href="http://skrollex.x40.ru/theme-luiza/index.html#skills" class="hover-effect" data-ss1485309693="1">Skills</a></li>
+						<li><a href="http://skrollex.x40.ru/theme-luiza/index.html#contact" class="hover-effect" data-ss1485309693="1">Contact</a></li>
+						<li class="hidden-xs"><a class="menu-toggle ext-nav-toggle" data-target=".ext-nav" href="http://skrollex.x40.ru/theme-luiza/portfolio-item-1.html#" data-ss1485309693="1"><span></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END: Top menu -->
+		<ul id="dot-scroll" class="colors-e background-solid"></ul>
+		<div class="overlay-window gallery-overlay colors-f background-95-f" data-overlay-zoom="#work .content">
+			<div class="overlay-control background-85-d">
+				<a class="previos" href="http://skrollex.x40.ru/theme-luiza/portfolio-item-1.html#" data-ss1485309693="1"></a>
+				<a class="next" href="http://skrollex.x40.ru/theme-luiza/portfolio-item-1.html#" data-ss1485309693="1"></a>
+				<a class="cross" href="http://skrollex.x40.ru/theme-luiza/portfolio-item-1.html#" data-ss1485309693="1"></a>
+			</div>
+			<div class="overlay-view"></div>
+			<ul class="loader">
+				<li class="background-100-d"></li>
+				<li class="background-100-d"></li>
+				<li class="background-100-d"></li>
+			</ul>
+		</div>
+		<div class="overlay-window map-overlay colors-f background-95-f">
+			<div class="overlay-control background-90-f">
+				<a class="cross" href="http://skrollex.x40.ru/theme-luiza/portfolio-item-1.html#" data-ss1485309693="1"></a>
+			</div>
+			<div class="overlay-view">
+				<div class="map-canvas" data-latitude="42.487606" data-longitude="-71.115661" data-zoom="14">
+					<div class="map-marker" data-latitude="42.487606" data-longitude="-71.115661" data-text="Our awesome location"></div>
+					<div class="map-marker" data-latitude="42.485100" data-longitude="-71.113256" data-text="Our sales office"></div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay-window credits-overlay colors-g background-95-g">
+			<div class="overlay-control background-85-d">
+				<a class="cross" href="http://skrollex.x40.ru/theme-luiza/portfolio-item-1.html#" data-ss1485309693="1"></a>
+			</div>
+			<div class="overlay-view">
+				<div class="content-container">
+					<h3>Credits</h3>
+					<ul>
+						<li>
+							Photos by:
+							<ul>
+								<li><a target="_blank" href="https://www.flickr.com/photos/katya_alagich/" rel="noreferrer" data-ss1485309693="1">Katya Alagich</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/" rel="noreferrer" data-ss1485309693="1">CC BY 2.0 License</a></li>
+								<li><a target="_blank" href="https://www.flickr.com/photos/65047661@N00/" rel="noreferrer" data-ss1485309693="1">Jim Lukach</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/" rel="noreferrer" data-ss1485309693="1">CC BY 2.0 License</a></li>
+								<li><a target="_blank" href="https://www.flickr.com/photos/johanl/" rel="noreferrer" data-ss1485309693="1">Johan Larsson</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/" rel="noreferrer" data-ss1485309693="1">CC BY 2.0 License</a></li>
+								<li><a target="_blank" href="https://www.flickr.com/photos/johny/" rel="noreferrer" data-ss1485309693="1">John Kraus</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/" rel="noreferrer" data-ss1485309693="1">CC BY 2.0 License</a></li>
+								<li><a target="_blank" href="https://www.flickr.com/photos/geishaboy500/" rel="noreferrer" data-ss1485309693="1">THOR</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/" rel="noreferrer" data-ss1485309693="1">CC BY 2.0 License</a></li>
+								<li><a target="_blank" href="https://www.flickr.com/photos/stf-o/" rel="noreferrer" data-ss1485309693="1">stephane</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/2.0/" rel="noreferrer" data-ss1485309693="1">CC BY 2.0 License</a></li>
+								<li><a target="_blank" href="http://www.pexels.com/" rel="noreferrer" data-ss1485309693="1">Pexels</a>, <a target="_blank" href="http://www.pexels.com/photo-license/" rel="noreferrer" data-ss1485309693="1">CC0 License</a></li>
+								<li><a target="_blank" href="https://stocksnap.io/" rel="noreferrer" data-ss1485309693="1">Stocksnap</a>, <a target="_blank" href="https://stocksnap.io/license" rel="noreferrer" data-ss1485309693="1">CC0 License</a></li>
+								<li><a target="_blank" href="http://picjumbo.com/" rel="noreferrer" data-ss1485309693="1">Picjumbo</a>, <a target="_blank" href="http://picjumbo.com/about-author/" rel="noreferrer" data-ss1485309693="1">Picjumbo License</a></li>
+							</ul>
+						</li>
+						<li>
+							Video by:
+							<ul>
+								<li><a target="_blank" href="http://mazwai.com/" rel="noreferrer" data-ss1485309693="1">Mazwai</a>, <a target="_blank" href="https://creativecommons.org/licenses/by/3.0/" rel="noreferrer" data-ss1485309693="1">CC BY 3.0 License</a></li>
+							</ul>
+						</li>
+						<li>
+							Icons by:
+							<ul>
+								<li><a target="_blank" href="http://designmodo.com/" rel="noreferrer" data-ss1485309693="1">Designmodoh</a>, <a target="_blank" href="http://designmodo.com/linecons-free/" rel="noreferrer" data-ss1485309693="1">License</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="gate colors-a background-solid" style="opacity: 0; visibility: hidden;">
+			<div class="gate-bar background-highlight-e" style="width: 100%;"></div>
+			<ul class="loader">
+				<li class="background-100-g"></li>
+				<li class="background-90-c"></li>
+				<li class="background-100-f"></li>
+			</ul>
+		</div>
+		<!-- BEGIN: Page content -->
+
+		<!-- END: Page content -->
+		<!-- BEGIN: Footer -->
+		<footer class="colors-g page-transition non-preloading">
+			<div class="container scroll-in-animation player" data-animation="fadeInDown">
+				<div class="row">
+					<div class="col-md-3">
+						<h4>SKROLL<span class="highlight">EX</span></h4>
+						<div class="footer-description">
+							<p>Mauris metus tellus, lacinia nec efficitur quis, rhoncus et mi.</p>
+						</div>
+						<p class="social-links">
+							<a target="_blank" href="https://www.facebook.com/" rel="noreferrer" data-ss1485309693="1"><i class="fa fa-facebook"></i></a>
+							<a target="_blank" href="https://twitter.com/" rel="noreferrer" data-ss1485309693="1"><i class="fa fa-twitter"></i></a>
+							<a target="_blank" href="http://www.youtube.com/" rel="noreferrer" data-ss1485309693="1"><i class="fa fa-youtube"></i></a>
+							<a target="_blank" href="https://vimeo.com/" rel="noreferrer" data-ss1485309693="1"><i class="fa fa-vimeo-square"></i></a>
+							<a target="_blank" href="https://www.pinterest.com/" rel="noreferrer" data-ss1485309693="1"><i class="fa fa-printerest"></i></a>
+							<a target="_blank" href="https://www.linkedin.com/" rel="noreferrer" data-ss1485309693="1"><i class="fa fa-linkedin"></i></a>
+						</p>
+					</div>
+					<div class="col-md-3">
+						<h5>Additional Links</h5>
+						<ul class="simple">
+							<li><a href="http://skrollex.x40.ru/theme-luiza/help.html" data-ss1485309693="1">Documentation</a></li>
+							<li><a href="http://skrollex.x40.ru/theme-luiza/blog.html" data-ss1485309693="1">Blog</a></li>
+							<li><a href="http://skrollex.x40.ru/theme-luiza/index.html#how-we-work" data-ss1485309693="1">How We Work</a></li>
+							<li><a href="http://skrollex.x40.ru/theme-luiza/index.html#who-we-are" data-ss1485309693="1">Who We Are</a></li>
+							<li><a href="http://skrollex.x40.ru/theme-luiza/index.html#numbers" data-ss1485309693="1">Our Numbers</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h5>Recent Posts</h5>
+						<ul class="simple">
+							<li><a href="http://skrollex.x40.ru/theme-luiza/blog-single-1.html" data-ss1485309693="1">Post with Featured Image</a></li>
+							<li><a href="http://skrollex.x40.ru/theme-luiza/blog-single-2.html" data-ss1485309693="1">And Post with Slider</a></li>
+							<li><a href="http://skrollex.x40.ru/theme-luiza/blog-single-3.html" data-ss1485309693="1">Post with Vimeo Video</a></li>
+							<li><a href="http://skrollex.x40.ru/theme-luiza/blog-single-4.html" data-ss1485309693="1">Another Post with Image</a></li>
+							<li><a href="http://skrollex.x40.ru/theme-luiza/blog.html" data-ss1485309693="1">More...</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h5>Photo Stream</h5>
+						<div class="photo">
+							<div class="col-xs-3 col-sm-2 col-md-4">
+								<a target="_blank" href="https://www.flickr.com/photos/we-are-envato/12333983853" title="Melbourne Meetup by Envato, on Flickr" rel="noreferrer" data-ss1485309693="1"><img class="fluid-width" src="./portfolio-item-1_files/12333983853_8fc462a494_q.jpg" alt="Melbourne Meetup"></a>
+							</div>
+							<div class="col-xs-3 col-sm-2 col-md-4">
+								<a target="_blank" href="https://www.flickr.com/photos/we-are-envato/13090549273" title="Around the Envato Office - Highfive! by Envato, on Flickr" rel="noreferrer" data-ss1485309693="1"><img class="fluid-width" src="./portfolio-item-1_files/13090549273_ee5c732ce1_q.jpg" alt="Around the Envato Office - Highfive!"></a>
+							</div>
+							<div class="col-xs-3 col-sm-2 col-md-4">
+								<a target="_blank" href="https://www.flickr.com/photos/we-are-envato/12333834195" title="Melbourne Meetup by Envato, on Flickr" rel="noreferrer" data-ss1485309693="1"><img class="fluid-width" src="./portfolio-item-1_files/12333834195_7dcb472dd5_q.jpg" alt="Melbourne Meetup"></a>
+							</div>
+							<div class="col-xs-3 col-sm-2 col-md-4">
+								<a target="_blank" href="https://www.flickr.com/photos/we-are-envato/13090422515" title="Around the Envato Office - Becca by Envato, on Flickr" rel="noreferrer" data-ss1485309693="1"><img class="fluid-width" src="./portfolio-item-1_files/13090422515_cabc9c447c_q.jpg" alt="Around the Envato Office - Becca"></a>
+							</div>
+							<div class="col-xs-3 col-sm-2 col-md-4">
+								<a target="_blank" href="https://www.flickr.com/photos/we-are-envato/13090762874" title="Around the Envato Office - Ben &amp; Jane by Envato, on Flickr" rel="noreferrer" data-ss1485309693="1"><img class="fluid-width" src="./portfolio-item-1_files/13090762874_5f9d99f4e5_q.jpg" alt="Around the Envato Office - Ben &amp; Jane"></a>
+							</div>
+							<div class="col-xs-3 col-sm-2 col-md-4">
+								<a target="_blank" href="https://www.flickr.com/photos/we-are-envato/13090456565" title="Around the Envato Office - Selina by Envato, on Flickr" rel="noreferrer" data-ss1485309693="1"><img class="fluid-width" src="./portfolio-item-1_files/13090456565_df81e68627_q.jpg" alt="Around the Envato Office - Selina"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom text-center background-10-b">
+				© 2016 All Rights Reserved. <a href="http://skrollex.x40.ru/theme-luiza/portfolio-item-1.html#" class="open-overlay-window heading" data-overlay-window=".credits-overlay" data-ss1485309693="1">Credits.</a>
+			</div>
+		</footer>
+		<!-- END: Footer -->
+		<script>
+		if (typeof(atob) == "undefined")
+		{
+			document.write('<script src="lib/stringencoders-v3.10.3/javascript/base64.js"><\/script>');
+			var atob = function(x)
+			{
+				return base64.decode(x);
+			}
+		}
+		</script>
+		<script src="./portfolio-item-1_files/less.min.js"></script>
+		<script src="./portfolio-item-1_files/jquery.min.js"></script>
+		<script src="./portfolio-item-1_files/tween.min.js"></script>
+		<script src="./portfolio-item-1_files/bootstrap.min.js"></script>
+		<script src="./portfolio-item-1_files/modernizr.js"></script>
+		<script src="./portfolio-item-1_files/SmoothScroll.js"></script>
+		<script src="./portfolio-item-1_files/jquery.cookie.js"></script>
+		<script src="./portfolio-item-1_files/js"></script>
+		<script src="./portfolio-item-1_files/jqBootstrapValidation-1.3.7.min.js"></script>
+		<script src="./portfolio-item-1_files/jquery.minicolors.min.js"></script>
+		<script src="./portfolio-item-1_files/slick.min.js"></script>
+		<script src="./portfolio-item-1_files/jquery.shuffle.min.js"></script>
+		<script src="./portfolio-item-1_files/jquery.lettering.js"></script>
+		<script src="./portfolio-item-1_files/jquery.fittext.js"></script>
+		<script src="./portfolio-item-1_files/jquery.textillate.js"></script>
+		<script src="./portfolio-item-1_files/prism.js"></script>
+		<script>
+		(function()
+		{
+			var disableMobileAnimations = true;
+			var isWin = navigator.appVersion.indexOf("Win") !== -1;
+			if (isWin) $('html').addClass('win');
+			var ua = navigator.userAgent.toLowerCase();
+			var isChrome = ua.indexOf('chrome') > -1;
+			if (isChrome) $('html').addClass('chrome');
+			var isAndroidBrowser4_3minus = ((ua.indexOf('mozilla/5.0') > -1 && ua.indexOf('android ') > -1 && ua.indexOf('applewebkit') > -1) && !(ua.indexOf('chrome') > -1));
+			if (isAndroidBrowser4_3minus) $('html').addClass('android-browser-4_3minus');
+			var isSafari = !isChrome && ua.indexOf('safari') !== -1;
+			if (isSafari) $('html').addClass('safari');
+			var isMobile = Modernizr.touch;
+			if (isMobile)
+			{
+				$('html').addClass('mobile');
+				if (disableMobileAnimations) $('html').addClass('poor-browser');
+			}
+			else
+			{
+				$('html').addClass('non-mobile');
+			}
+			if (isWin && isSafari)
+			{
+				$('html').addClass('flat-animation');
+			}
+		})();
+		</script>
+		<script src="./portfolio-item-1_files/script-bundle.js"></script>
+		<script>
+		if (Function('/*@cc_on return document.documentMode===9@*/')())
+		{
+			$('html').addClass('ie9');
+		}
+		if (Function('/*@cc_on return document.documentMode===10@*/')())
+		{
+			$('html').addClass('ie10');
+		}
+		if (!!navigator.userAgent.match(/Trident.*rv\:11\./))
+		{
+			$('html').addClass('ie11');
+		}
+		</script>
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>

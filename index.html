@@ -859,14 +859,14 @@
                     <div class="filter">
                         <ul class="nav nav-pills text-center">
                             <li><a class="hover-effect" data-group="none" href="#">All</a></li>
-                            <li><a class="hover-effect" data-group="gaming" href="#">Gaming</a></li>
-                            <li><a class="hover-effect" data-group="robotics" href="#">Robotics</a></li>
-                            <li><a class="hover-effect" data-group="coding" href="#">Coding</a></li>
-                            <li><a class="hover-effect" data-group="workshop" href="#">Workshop</a></li>
-                            <li><a class="hover-effect" data-group="outofbox" href="#">Out Of the Box</a></li>
-                            <li><a class="hover-effect" data-group="kaleidoscope" href="#">Kaleidoscope</a></li>
-                            <li><a class="hover-effect" data-group="geeks" href="#">Geeks</a></li>
-                            <li><a class="hover-effect" data-group="guest" href="#">Guest Lectures</a></li>
+                            <li><a class="hover-effect" data-group="gaming" id="gaminglink" href="#">Gaming</a></li>
+                            <li><a class="hover-effect" data-group="robotics" id ="roboticslink" href="#">Robotics</a></li>
+                            <li><a class="hover-effect" data-group="coding" id ="codinglink" href="#">Coding</a></li>
+                            <li><a class="hover-effect" data-group="workshop" id ="workshoplink" href="#">Workshop</a></li>
+                            <li><a class="hover-effect" data-group="outofbox" id ="outofboxlink" href="#">Out Of the Box</a></li>
+                            <li><a class="hover-effect" data-group="kaleidoscope" id ="kaleidoscopelink" href="#">Kaleidoscope</a></li>
+                            <li><a class="hover-effect" data-group="geeks" id ="geekslink" href="#">Geeks</a></li>
+                            <li><a class="hover-effect" data-group="guest" id ="guestlink" href="#">Guest Lectures</a></li>
                         </ul>
                     </div>
 
@@ -891,7 +891,7 @@
                                 </a>
                             </div>
                             <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["gaming"]'>
-                                <a href="#!portfolio-item-2.html" class="hover-overlay">
+                                <a href="#!team.html" class="hover-overlay">
                                     <img alt="Project 2" src="images/portfolio/preview/2.jpg" />
                                     <div class="overlay background-90-a">
                                         <div class="hidden-xs">
@@ -1026,64 +1026,80 @@
                                 <!--First Row Event-->
                                 <div class="row icon-set">
                                     <div class="col-md-3 text-center" >
+                                        <a onclick="$('#gaminglink').trigger('click')" href="#">
                                         <p>
                                             <i class="fa fa-gamepad circle scroll-in-animation background-20 heading"
                                                data-animation="fadeInUp"></i>
                                         </p>
                                         <p class="title"><span>Gaming</span></p>
+                                        </a>
 
                                     </div>
                                     <div class="col-md-3 text-center">
+                                        <a onclick="$('#roboticslink').trigger('click')" href="#">
                                         <p>
                                             <i class="fa fa-cogs circle scroll-in-animation background-20 heading"
                                                data-animation="fadeInUp"></i>
                                         </p>
                                         <p class="title"><span>Robotics</span></p>
+                                        </a>
                                     </div>
                                     <div class="col-md-3 text-center">
+                                        <a onclick="$('#codinglink').trigger('click')" href="#">
                                         <p>
                                             <i class="fa fa-code circle scroll-in-animation background-20 heading"
                                                data-animation="fadeInUp"></i>
                                         </p>
                                         <p class="title"><span>Coding</span></p>
+                                        </a>
                                     </div>
                                     <div class="col-md-3 text-center" onclick="$('#TempPopup').addClass('show')">
+                                        <a onclick="$('#workshoplink').trigger('click')" href="#">
                                         <p>
                                             <i class="fa fa-industry circle scroll-in-animation background-20 heading"
                                                data-animation="fadeInUp"></i>
                                         </p>
                                         <p class="title"><span>Workshops</span></p>
+                                        </a>
                                     </div>
                                 </div>
                                 <!--Second Row Event-->
                                 <div class="row icon-set">
                                     <div class="col-md-3 text-center">
+                                        <a onclick="$('#outofboxlink').trigger('click')" href="#">
                                         <p>
                                             <i class="fa fa-american-sign-language-interpreting circle scroll-in-animation background-20 heading"
                                                data-animation="fadeInUp"></i>
                                         </p>
                                         <p class="title"><span>Out Of The Box</span></p>
+                                        </a>
                                     </div>
                                     <div class="col-md-3 text-center">
+                                        <a onclick="$('#kaleidoscopelink').trigger('click')" href="#">
                                         <p>
                                             <i class="fa fa-paint-brush circle scroll-in-animation background-20 heading"
                                                data-animation="fadeInUp"></i>
                                         </p>
                                         <p class="title"><span>Kaleidoscope</span></p>
+                                        </a>
                                     </div>
                                     <div class="col-md-3 text-center">
+                                        <a onclick="$('#geekslink').trigger('click')" href="#">
                                         <p>
                                             <i class="fa fa-question circle scroll-in-animation background-20 heading"
                                                data-animation="fadeInUp"></i>
                                         </p>
                                         <p class="title"><span>Geeks</span></p>
+                                        </a>
                                     </div>
                                     <div class="col-md-3 text-center">
+                                        <a onclick="$('#guestlink').trigger('click')" href="#">
                                         <p>
                                             <i class="fa fa-graduation-cap circle scroll-in-animation background-20 heading"
                                                data-animation="fadeInUp"></i>
                                         </p>
                                         <p class="title"><span>Guest Lectures</span></p>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1268,322 +1284,7 @@
 <!--</div>-->
 <!--</div>-->
 <!--</section>-->
-<section id="team">
-    <div class="view">
-        <div class="content colors-e background-solid">
-            <div class="container">
-                <h2>Team</h2>
-                <!--<p class="header-details"><span class="highlight">Mind </span>Behind It</p>
-                <p class="lead">Our success depends on the <strong class="highlight">strength of our team.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation.</p>-->
-                <p class="header-details"><span class="highlight">Fore</span>Men</p>
-                <div class="foremen-cen">
-                    <div class="row text-center">
-                        <div class="col-md-3 col-sm-3  col-xs-6 ">
-                            <div class="hover-overlay">
-                                <img alt="Sandipan Das" src="images/our-team/1.jpg" title="Sandipan Das"
-                                     class="img-circle" width="150px" height="150px">
-                                <div class="overlay background-90-b">
-                                    <div>
-                                        <div class="separator-small"></div>
-                                        <p class="text-center">
-                                            <a target="_blank" href="../../www.facebook.com/index.html"><i
-                                                    class="fa fa-facebook heading-b"></i></a>
 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="caption">
-                                <p>
-                                    <span class="title">Sandipan Das</span>
-                                    <br/>
-                                    <!--<span class="highlight">General Secretary</span>-->
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 col-sm-3  col-xs-6">
-                            <div class="hover-overlay">
-                                <img alt="Faizaan Khan" src="images/our-team/1.jpg" title="Faizaan Khan"
-                                     class="img-circle" width="150px" height="150px">
-                                <div class="overlay background-90-b">
-                                    <div>-->
-                                        <!--<p class="text-center text-uppercase heading-b">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        </p>-->
-                                        <div class="separator-small"></div>
-                                        <p class="text-center">
-                                            <a target="_blank" href="../../www.facebook.com/index.html"><i
-                                                    class="fa fa-facebook heading-b"></i></a>
-                                            &nbsp;<a target="_blank" href="../../github.com/index.html"><i
-                                                class="fa fa-github heading-b"></i></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="caption">
-                                <p>
-                                    <span class="title">Faizaan Khan</span>
-                                    <br/>
-                                    <!--<span class="highlight">Technical Secretary</span>-->
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-3  col-xs-6">
-                            <div class="hover-overlay">
-                                <img alt="Gurupada Chakraborty" src="images/our-team/1.jpg" title="Gurupada Chakraborty"
-                                     class="img-circle" width="150px" height="150px">
-                                <div class="overlay background-90-b">
-                                    <div>-->
-                                        <!--<p class="text-center text-uppercase heading-b">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        </p>-->
-                                        <div class="separator-small"></div>
-                                        <p class="text-center">
-                                            <a target="_blank" href="../../www.facebook.com/index.html"><i
-                                                    class="fa fa-facebook heading-b"></i></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="caption">
-                                <p>
-                                    <span class="title">Gurupada Chakraborty</span>
-                                    <br/>
-                                    <!--<span class="highlight">Gaming Head</span>-->
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-3  col-xs-6">
-                            <div class="hover-overlay">
-                                <img alt="Vikas Kumar" src="images/our-team/1.jpg" title="Vikas Kumar"
-                                     class="img-circle" width="150px" height="150px">
-                                <div class="overlay background-90-b">
-                                    <div>
-                                        <div class="separator-small"></div>
-                                        <p class="text-center">
-                                            <a target="_blank" href="../../www.facebook.com/index.html"><i
-                                                    class="fa fa-facebook heading-b"></i></a>
-                                            &nbsp;<a target="_blank" href="../../www.youtube.com/index.html"><i
-                                                class="fa fa-twitter heading-b"></i></a>
-                                            &nbsp;<a target="_blank" href="../../github.com/index.html"><i
-                                                class="fa fa-github heading-b"></i></a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="caption">
-                                <p>
-                                    <span class="title">Vikas Kumar</span>
-                                    <br/>
-                                    <!--<span class="highlight">Technical Head</span>-->
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <p class="header-details text"><span class="highlight">Web</span>makers and Designers</p>
-                <div class="row text-center">
-                    <div class="col-md-3 col-sm-3  col-xs-6">
-                        <div class="hover-overlay">
-                            <img alt="Rishav Saigal" src="images/our-team/1.jpg" title="Rishav Saigal"
-                                 class="img-circle" width="150px" height="150px">
-                            <div class="overlay background-90-b">
-                                <div>-->
-                                    <!--<p class="text-center text-uppercase heading-b">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>-->
-                                    <div class="separator-small"></div>
-                                    <p class="text-center">
-                                        <a target="_blank" href="../../www.facebook.com/index.html"><i
-                                                class="fa fa-facebook heading-b"></i></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <p>
-                                <span class="title">Rishav Saigal</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3  col-xs-6">
-                        <div class="hover-overlay">
-                            <img alt="Satadal Chakraborty" src="images/our-team/1.jpg" title="Satadal Chakraborty"
-                                 class="img-circle" width="150px" height="150px">
-                            <div class="overlay background-90-b">
-                                <div>-->
-                                    <!--<p class="text-center text-uppercase heading-b">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>-->
-                                    <div class="separator-small"></div>
-                                    <p class="text-center">
-                                        <a target="_blank" href="../../www.facebook.com/index.html"><i
-                                                class="fa fa-facebook heading-b"></i></a> &nbsp;<a target="_blank"
-                                                                                                   href="../../www.youtube.com/index.html"><i
-                                            class="fa fa-youtube heading-b"></i></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <p>
-                                <span class="title">Satadal Chakraborty</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3  col-xs-6">
-                        <div class="hover-overlay">
-                            <img alt="Sikím Chakraborty" src="images/our-team/1.jpg" title="Sikím Chakraborty"
-                                 class="img-circle" width="150px" height="150px">
-                            <div class="overlay background-90-b">
-                                <div>-->
-                                    <!--<p class="text-center text-uppercase heading-b">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>-->
-                                    <div class="separator-small"></div>
-                                    <p class="text-center">
-                                        <a target="_blank" href="../../www.facebook.com/index.html"><i
-                                                class="fa fa-facebook heading-b"></i></a>
-                                        &nbsp;<a target="_blank" href="../../www.youtube.com/index.html"><i
-                                            class="fa fa-youtube heading-b"></i></a>
-                                        &nbsp;<a target="_blank" href="../../github.com/index.html"><i
-                                            class="fa fa-github heading-b"></i></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <p>
-                                <span class="title">Sikím Chakraborty</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3  col-xs-6">
-                        <div class="hover-overlay">
-                            <img alt="Deeksha Sinha" src="images/our-team/1.jpg" title="Deeksha Sinha"
-                                 class="img-circle" width="150px" height="150px">
-                            <div class="overlay background-90-b">
-                                <div>-->
-                                    <!--<p class="text-center text-uppercase heading-b">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>-->
-                                    <div class="separator-small"></div>
-                                    <p class="text-center">
-                                        <a target="_blank" href="../../www.facebook.com/index.html"><i
-                                                class="fa fa-facebook heading-b"></i></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <p>
-                                <span class="title">Deeksha Sinha</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <br>
-
-                <p class="header-details text"><span class="highlight">Spe</span>cial Thanks</p>
-                <div class="row text-center">
-                    <div class="col-md-2 col-sm-3  col-xs-6">
-                        <div class="hover-overlay">
-                            <img alt="Kaustav Biswas" src="images/our-team/1.jpg" title="Kaustav Biswas"
-                                 class="img-circle" width="150px" height="150px">
-                            <div class="overlay background-90-b">
-                                <div>-->
-                                    <!--<p class="text-center text-uppercase heading-b">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    </p>-->
-                                    <div class="separator-small"></div>
-                                    <p class="text-center">
-                                        <a target="_blank" href="../../www.facebook.com/index.html"><i
-                                                class="fa fa-facebook heading-b"></i></a>
-                                        &nbsp;<a target="_blank" href="../../github.com/index.html"><i
-                                            class="fa fa-github heading-b"></i></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <p>
-                                <span class="title">Kaustav Biswas</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-3  col-xs-6">
-                        <div class="hover-overlay">
-                            <img alt="Himadri Biswas" src="images/our-team/1.jpg" title="Himadri Biswas"
-                                 class="img-circle" width="150px" height="150px">
-                            <div class="overlay background-90-b">
-                                <div>
-
-                                    <div class="separator-small"></div>
-                                    <p class="text-center">
-                                        <a target="_blank" href="../../www.facebook.com/index.html"><i
-                                                class="fa fa-facebook heading-b"></i></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <p>
-                                <span class="title">Himadri Biswas</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h3><span class="highlight">We want to change</span><br/>peoples lives</h3>
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <p class="text-center">Aliquam fermentum massa ac est sollicitudin, at ultricies ligula tristique.
-                        Cras finibus, nulla ac convallis feugiat, nisl nisl lobortis est, eget auctor velit magna vel
-                        nunc. Donec nec eros rhoncus.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="view" id="who-we-are">
-        <div class="content pane">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 stretch-height pane">
-                        <div class="view fluid-height">
-                            <img alt class="bg" src="images/bg/JimLukach/69-edited.jpg"/>
-                            <div class="content incut colors-d background-transparent">
-                                <div class="position-middle-center text-center">
-                                    <a class="button background-lite-c heading-c" href="#work">View Our Work</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6  stretch-height pane">
-                        <div class="view fluid-height">
-                            <div class="content incut colors-h background-solid">
-                                <div class="position-middle-center">
-                                    <h3 class="text-left"><span class="highlight">Who</span> We Are</h3>
-                                    <p class="subtitle highlight"><strong>Quisque dolor lacus, commodo id hendrerit
-                                        viverra, euismod in odio.</strong></p>
-                                    <p>Aliquam fermentum massa ac est sollicitudin, at ultricies ligula tristique. Cras
-                                        finibus, nulla ac convallis feugiat, nisl nisl lobortis est, eget auctor velit
-                                        magna vel nunc. Donec nec eros rhoncus.</p>
-                                    <p>Aenean nisi neque, aliquam ut nibh sit amet, finibus sagittis tortor aenean
-                                        consectetur.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
--->
 <section id="contact">
     <div class="view">
         <img alt class="bg" src="images/bg/cover/techtrix.jpg"/>
