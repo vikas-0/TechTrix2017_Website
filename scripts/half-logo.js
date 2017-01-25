@@ -142,10 +142,6 @@ function animateT() {
             drawLine(w2, h2 + ball.radius, w2, h3 - ball.radius);
             //next animation (make text appear)
             $('#homeintro').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 7000);
-            setTimeout(function(){
-                $('#TempPopup').addClass('show');
-            },4000);
-
         }
     }
 
