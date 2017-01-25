@@ -25,6 +25,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Techtrix 2017 - RCC Institute of Information Technology's Technical Fest on 25th , 26th and 27th
         February</title>
+    <script src='scripts/jquery.particleground.js'></script>
+    <script>
+        // Particle background
+        document.addEventListener('DOMContentLoaded', function () {
+            particleground(document.getElementById('particles'), {
+                dotColor: '#424949',
+                lineColor: '#424949'
+            });
+        }, false);
+    </script>
+    <script src="scripts/half-logo.js"></script>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css"/>
     <link rel="stylesheet" href="bower_components/minicolors/jquery.minicolors.css"/>
@@ -70,16 +81,7 @@
             cursor: pointer;
         }
     </style>
-    <script>
-        // Particle background
-        document.addEventListener('DOMContentLoaded', function () {
-            particleground(document.getElementById('particles'), {
-                dotColor: '#424949',
-                lineColor: '#424949'
-            });
-        }, false);
-    </script>
-    <script src="scripts/half-logo.js"></script>
+
 </head>
 <body class="state1 background-100-e">
 
@@ -161,7 +163,7 @@
                 <!--<li><a href="#work" class="hover-effect">Gallery</a></li>-->
                 <li><a href="#aboutus" class="hover-effect">About Us</a></li>
                 <!--<li><a href="#skills" class="hover-effect">Skills</a></li>-->
-                <!--<li><a href="#team" class="hover-effect">Team</a></li>-->
+                <li><a href="#" onclick="$('#teamoverlay').trigger('click')" class="hover-effect">Team</a></li>
                 <li><a href="#contact" class="hover-effect">Reach Us</a></li>
                 <!--<li class="hidden-xs"><a class="menu-toggle ext-nav-toggle" data-target=".ext-nav" href="#"><span></span></a></li>-->
             </ul>
@@ -179,27 +181,6 @@
         <div id="map" style="height: 70vh; width: 70vw; margin :auto;"></div>
     </div>
 </div>
-
-<div id="TempPopup" class="overlay-window popup-overlay colors-h background-75-h">
-    <div class="overlay-control background-90-g">
-        <a class="cross" href="javascript:$('#TempPopup').removeClass('show')"></a>
-    </div>
-    <div class="overlay-view">
-        <!--<h2 style="font-size:2em;margin:0;padding:0"><span class="thin-font-weight">Into the <span-->
-        <!--class="highlight">Next Dimension</span></span></h2>-->
-        <p style="font-size: xx-large" class="text-center"><span
-                class="highlight thin-font-weight">National Workshop Series 2016-2017</p>
-        <p style="font-size: large" class="text-center">Organised by <span class="highlight">RoboKart</span> in
-            association with <span class="highlight">Innovision Cell, IIT Bombay</span></p>
-        <p style="font-size: medium" class="text-center">On 22nd and 23rd February. For Registraion and more info, see
-            our Facebook Post</p>
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftechtrix.rcciit%2Fposts%2F1819512198296493&width=700"
-                width="700" height="400" style="border:none;overflow:scroll; margin:0 auto;display:block"
-                scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
-    </div>
-</div>
-
-
 <div class="overlay-window gallery-overlay colors-g background-95-g" data-overlay-zoom="#work .content">
     <div class="overlay-control background-90-b">
         <a class="previos" href="#"></a>
@@ -214,11 +195,17 @@
     </ul>
 </div>
 
-<div class="overlay-window credits-overlay colors-g background-95-g">
-    <div class="overlay-control background-90-b">
-        <a class="cross" href="#"></a>
-    </div>
-</div>
+<!--<div class="overlay-window credits-overlay colors-g background-95-g">-->
+    <!--<div class="overlay-control background-90-b">-->
+        <!--<a class="cross" href="#"></a>-->
+    <!--</div>-->
+    <!--<div class="overlay-view"></div>-->
+    <!--<ul class="loader">-->
+        <!--<li class="background-highlight-e"></li>-->
+        <!--<li class="background-highlight-e"></li>-->
+        <!--<li class="background-highlight-e"></li>-->
+    <!--</ul>-->
+<!--</div>-->
 <div class="gate colors-e background-solid">
     <div class="gate-bar background-heading-e"></div>
     <ul class="loader">
@@ -873,31 +860,15 @@
                     <div class="row">
                         <div class="grid">
 
-                            <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["gaming"]'>
-                                <a href="#!portfolio-item-1.html" class="hover-overlay">
-                                    <p>
-                                        <i class="fa fa-graduation-cap circle scroll-in-animation background-20 heading"
-                                           data-animation="fadeInUp"></i>
-                                    </p>
-                                    <p class="title"><span>Guest Lectures</span></p>
-                                    <!--<img alt="Project 1" src="images/portfolio/preview/1.jpg" />-->
-                                    <!--<div class="overlay background-90-a">-->
-                                        <!--<div class="hidden-xs">-->
-                                            <!--<p class="title heading-a">Image</p>-->
-                                            <!--<p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>-->
-                                            <!--<p class="text-center"><i class="fa fa-picture-o heading-a"></i></p>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                </a>
-                            </div>
-                            <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["gaming"]'>
-                                <a href="#!team.html" class="hover-overlay">
-                                    <img alt="Project 2" src="images/portfolio/preview/2.jpg" />
+                            <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["workshop"]'>
+                                <a href="#!android.html" class="hover-overlay">
+                                    <img alt="Android Workshop" src="images/portfolio/android.jpg" />
+                                    <p class="title heading-a">Android</p>
                                     <div class="overlay background-90-a">
                                         <div class="hidden-xs">
-                                            <p class="title heading-a">YouTube Video</p>
-                                            <p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-                                            <p class="text-center"><i class="fa fa-youtube-square heading-a"></i></p>
+                                            <p class="title heading-a">Android</p>
+                                            <p class="text-center heading-a"><strong>Learn to Create Android app in our National Workshop Series</strong></p>
+                                            <!--<p class="text-center"><i class="fa fa-youtube-square heading-a"></i></p>-->
                                         </div>
                                     </div>
                                 </a>
@@ -1012,6 +983,18 @@
                             </div>
                             <div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["web", "design"]'>
                                 <a href="#!portfolio-item-12.html" class="hover-overlay">
+                                    <img alt="Project 12" src="images/portfolio/preview/12.jpg" />
+                                    <div class="overlay background-90-a">
+                                        <div class="hidden-xs">
+                                            <p class="title heading-a">Slider</p>
+                                            <p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
+                                            <p class="text-center"><i class="fa fa-th heading-a"></i></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item col-md-3 col-sm-4 col-xs-6" style="display: none">
+                                <a href="#!team.html" class="hover-overlay" id="teamoverlay">
                                     <img alt="Project 12" src="images/portfolio/preview/12.jpg" />
                                     <div class="overlay background-90-a">
                                         <div class="hidden-xs">
@@ -1362,57 +1345,58 @@
         </div>
     </div>
 </section>
-<!-- END: Page content -->
-<!-- BEGIN: Footer -->
-<!--<footer class="colors-g page-transition non-preloading">-->
-<!--<div class="container scroll-in-animation" data-animation="fadeInDown">-->
-<!--<div class="row">-->
-<!--<div class="col-md-3">-->
-<!--<h4>Tech<span class="highlight">Trix</span></h4>-->
-<!--<div class="footer-description">-->
-<!--<p>Mauris metus tellus, lacinia nec efficitur quis, rhoncus et mi.</p>-->
-<!--</div>-->
-<!--<p class="social-links">-->
-<!--<a target="_blank" href="../../www.facebook.com/index.html"><i class="fa fa-facebook"></i></a>-->
-<!--<a target="_blank" href="../../twitter.com/index.html"><i class="fa fa-twitter"></i></a>-->
-<!--<a target="_blank" href="../../www.youtube.com/index.html"><i class="fa fa-youtube"></i></a>-->
-<!--<a target="_blank" href="../../vimeo.com/index.html"><i class="fa fa-vimeo-square"></i></a>-->
-<!--<a target="_blank" href="../../www.pinterest.com/index.html"><i class="fa fa-printerest"></i></a>-->
-<!--<a target="_blank" href="../../www.linkedin.com/index.html"><i class="fa fa-linkedin"></i></a>-->
-<!--</p>-->
-<!--</div>-->
-<!--<div class="col-md-3">-->
-<!--<h5>Additional Links</h5>-->
-<!--<ul class="simple">-->
-<!--<li><a href="help.html">Documentation</a></li>-->
-<!--<li><a href="blog.html">Blog</a></li>-->
-<!--<li><a href="#how-we-work">How We Work</a></li>-->
-<!--<li><a href="#who-we-are">Who We Are</a></li>-->
-<!--<li><a href="#numbers">Our Numbers</a></li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--<div class="col-md-3">-->
-<!--<h5>Our Sponsers</h5>-->
-<!--<ul class="simple">-->
-<!--<li><a></a></li>-->
+ <!--END: Page content -->
+ <!--BEGIN: Footer -->
+<footer class="colors-g page-transition non-preloading">
+<div class="container scroll-in-animation" data-animation="fadeInDown">
+<div class="row">
+<div class="col-md-3">
+<h4>Tech<span class="highlight">Trix</span></h4>
+<div class="footer-description">
+<p>Mauris metus tellus, lacinia nec efficitur quis, rhoncus et mi.</p>
+</div>
+<p class="social-links">
+<a target="_blank" href="../../www.facebook.com/index.html"><i class="fa fa-facebook"></i></a>
+<a target="_blank" href="../../twitter.com/index.html"><i class="fa fa-twitter"></i></a>
+<a target="_blank" href="../../www.youtube.com/index.html"><i class="fa fa-youtube"></i></a>
+<a target="_blank" href="../../vimeo.com/index.html"><i class="fa fa-vimeo-square"></i></a>
+<a target="_blank" href="../../www.pinterest.com/index.html"><i class="fa fa-printerest"></i></a>
+<a target="_blank" href="../../www.linkedin.com/index.html"><i class="fa fa-linkedin"></i></a>
+</p>
+</div>
+<div class="col-md-3">
+<h5>Additional Links</h5>
+<ul class="simple">
+<li><a href="help.html">Documentation</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="#how-we-work">How We Work</a></li>
+<li><a href="#who-we-are">Who We Are</a></li>
+<li><a href="#numbers">Our Numbers</a></li>
+</ul>
+</div>
+<div class="col-md-3">
+<h5>Our Sponsers</h5>
+<ul class="simple">
+<li><a></a></li>
 
-<!--</ul>-->
-<!--</div>-->
-<!--<div class="col-md-3">-->
-<!--<h5>Photo Stream</h5>-->
-<!--<div class="photo">-->
-<!--<p>Photos and videos with the <a href="https://www.instagram.com/explore/tags/techtrix17/" target="_blank">#techtrix17</a> on Instagram</p>-->
-<!--&lt;!&ndash; InstaWidget &ndash;&gt;-->
-<!--<a href="https://instawidget.net/v/tag/techtrix17" id="link-34c16f906323d5721791a62f914c32dc7568e97ac61ce8e864cd3d33c822c61e">#techtrix17</a>-->
-<!--<script src="https://instawidget.net/js/instawidget.js?u=34c16f906323d5721791a62f914c32dc7568e97ac61ce8e864cd3d33c822c61e&width=300px"></script>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="bottom text-center background-5-b">-->
-<!--© 2016 All Rights Reserved. <a href="#" class="open-overlay-window heading" data-overlay-window=".credits-overlay">Credits.</a>-->
-<!--</div>-->
-<!--</footer>-->
+</ul>
+</div>
+<div class="col-md-3">
+<h5>Photo Stream</h5>
+<div class="photo">
+<p>Photos and videos with the <a href="https://www.instagram.com/explore/tags/techtrix17/" target="_blank">#techtrix17</a> on Instagram</p>
+<!-- InstaWidget -->
+<a href="https://instawidget.net/v/tag/techtrix17" id="link-34c16f906323d5721791a62f914c32dc7568e97ac61ce8e864cd3d33c822c61e">#techtrix17</a>
+<script src="https://instawidget.net/js/instawidget.js?u=34c16f906323d5721791a62f914c32dc7568e97ac61ce8e864cd3d33c822c61e&width=300px"></script>
+</div>
+</div>
+</div>
+</div>
+<div class="bottom text-center background-5-b">
+    <!--<a href="#!portfolio-item-7.html" class="hover-overlay">-->
+    © 2016 All Rights Reserved.<a href="#" onclick="$('#teamoverlay').trigger('click')" >Credits.</a>
+</div>
+</footer>
 <!-- END: Footer -->
 <script>
     if (typeof(atob) == "undefined") {
@@ -1436,7 +1420,7 @@
 <script src="bower_components/textillate/assets/jquery.fittext.js"></script>
 <script src="bower_components/textillate/jquery.textillate.js"></script>
 <script src="lib/prism/prism.js"></script>
-<script src='scripts/jquery.particleground.js'></script>
+
 <script>
 
     function initMap() {
