@@ -88,7 +88,7 @@
 <!--Secondary menu button to be used later-->
 <div class="ext-nav background-95-h page-transition">
     <div class="view half-height">
-        <img alt class="bg static" src="images/bg/college.jpg" />
+        <!--<img alt class="bg static" src="images/bg/college.jpg" />-->
         <div class="content no-top-padding no-bottom-padding  full-height">
             <div class="container-fluid  full-height">
                 <div class="row full-height">
@@ -1791,24 +1791,6 @@
 <script src="bower_components/textillate/jquery.textillate.js"></script>
 <script src="lib/prism/prism.js"></script>
 
-<script>
-
-    function initMap() {
-        var myLatLng = {lat: 22.559938, lng: 88.396539};
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 12,
-            center: myLatLng
-        });
-
-        var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            title: 'RCC Institute of Information Technology'
-        });
-    }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn02AlfVh_oWroJrCd9kNQQ9d55haPiUs&callback=initMap">
 </script>
 <script>
     (function () {
@@ -1877,6 +1859,25 @@
             }
         }, 1000 * 12);
     });
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn02AlfVh_oWroJrCd9kNQQ9d55haPiUs&callback=initMap">
+
+    <script>
+
+    function initMap() {
+        var myLatLng = {lat: 22.559938, lng: 88.396539};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'RCC Institute of Information Technology'
+        });
+    }
 </script>
 
 </body>
