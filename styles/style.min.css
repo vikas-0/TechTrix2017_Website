@@ -1,5 +1,5 @@
 /*@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,500,600,300,200,100,800,900);*/
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Raleway|Open+Sans);
 body, html {
     width: 100%;
     -webkit-font-smoothing: antialiased;
@@ -148,12 +148,12 @@ iframe {
 }
 
 body, html {
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-weight: 400
+    font-family: 'Open Sans',Arial,Raleway,   sans-serif;
+    font-weight: 500
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Raleway, Arial, Helvetica, sans-serif
+    font-family: Raleway, Arial, 'Open Sans', sans-serif
 }
 
 h1 {
@@ -254,7 +254,7 @@ input, textarea {
 }
 
 .heading-font, .normal-font {
-    font-family: Raleway, Arial, Helvetica, sans-serif
+    font-family: Raleway, Arial, 'Open Sans', sans-serif
 }
 
 .small-font {
@@ -262,7 +262,7 @@ input, textarea {
 }
 
 .counter .count {
-    font-family: Helvetica, Arial, Sans-serif
+    font-family: 'Open Sans', Arial, Sans-serif
 }
 
 .font-weight-100 {
@@ -306,7 +306,7 @@ input, textarea {
     margin: 0 24px;
     border: none;
     border-bottom: 1px solid;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-family: Raleway, Arial, 'Open Sans', sans-serif;
     font-weight: 800;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -1532,7 +1532,7 @@ body {
     left: 0;
     overflow: hidden;
     z-index: 1000;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: "Trebuchet MS", 'Open Sans', sans-serif;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -ms-transition: all .5s;
@@ -3085,7 +3085,7 @@ a.button, input.button {
 }
 
 .btn, .button, .caption, .header-details, .help-title, .slogan, .subtitle, .title, input.button {
-    font-family: Raleway, Arial, Helvetica, sans-serif
+    font-family: Raleway, Arial, 'Open Sans', sans-serif
 }
 
 .separator {
