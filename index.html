@@ -789,7 +789,7 @@
                         <img src="images/logo.png" height="40px">
                         <!--<h1 class="text-center" style="font-size:40px;margin:0; padding:0; line-height: 2em">Tech<span-->
                                 <!--class="highlight thin-font-weight">Trix</span></h1>-->
-                        <h3>25-27 February</h3>
+                        <h3 id="timeleft">25-27 February</h3>
                     </div>
                 </div>
             </div>
@@ -1756,6 +1756,34 @@
         }
         else {
             $('html').addClass('non-mobile');
+
+            //timer
+            var deadline = 'February 25 2017 10:00:00 GMT+0530';
+            function getTimeRemaining(endtime){
+                var t = Date.parse(endtime) - Date.parse(new Date());
+                var seconds = Math.floor( (t/1000) % 60 );
+                var minutes = Math.floor( (t/1000/60) % 60 );
+                var hours = Math.floor( (t/(1000*60*60)) % 24 );
+                var days = Math.floor( t/(1000*60*60*24) );
+                return {
+                    'total': t,
+                    'days': days,
+                    'hours': hours,
+                    'minutes': minutes,
+                    'seconds': seconds
+                };
+            }
+
+            var timeleft=getTimeRemaining(deadline);
+            $('#timeleft').html(String(timeleft.days)+" Days and "+String(timeleft.hours)+" hours to Go" );
+
+            setInterval(function(){
+                var timeleft=getTimeRemaining(deadline);
+                $('#timeleft').html(String(timeleft.days)+" Days and "+String(timeleft.hours)+" hours to Go" );
+            },1000*60);
+
+            //console.log(getTimeRemaining(deadline));
+
         }
 
 //        if (isWin && isSafari) {
