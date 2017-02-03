@@ -219,30 +219,59 @@
 <!--particle Ground-->
 
 	<section id="home">
+
         <div class="view">
-            <div class="content pane" style="background-color: #101010">
-                <div id="disqus_thread" style="margin:10%"></div>
+            <div class="content" style="background-color: #101010">
+                <h3 class="text-center highlight" style="color: #dddddd">Book Your Slot in OYO</h3>
+                <h4 class="text-d">At nominal rate of ₹300 per person, per day. Breakfast complimentary</h4>
+                <div class="row" style="margin: 5% auto; max-width: 500px;">
+
+                    <div class="col-xs-12">
+
+                    <div class="text-center scroll-in-animation" data-animation="fadeIn">
+                        <form name="accomodation" action="" netlify>
+                            <div class="row">
+                                <div class="col-md-12 control-group">
+                                    <div class="alt-placeholder">Name</div>
+                                    <input type="text" name="your-name" value="" size="40" placeholder="Name"
+                                           data-validation-required-message="Please fill the required field."
+                                           required>
+                                    <div class="help-block"></div>
+                                </div>
+                                <div class="col-md-12 control-group">
+                                    <div class="alt-placeholder">Email</div>
+                                    <input type="email" name="your-email" value="" size="40" placeholder="Email"
+                                           data-validation-required-message="Please fill the required field."
+                                           required>
+                                    <div class="help-block"></div>
+                                </div>
+                                <div class="col-md-12 control-group">
+                                    <div class="alt-placeholder">Contact Number</div>
+                                    <input type="tel" name="your-contact" value="" size="11" placeholder="Contact Number"
+                                           data-validation-required-message="Please fill the required field."
+                                           required>
+                                    <div class="help-block"></div>
+                                </div>
+
+                                <div class="col-md-12 control-group">
+                                    <div class="alt-placeholder">Requirement</div>
+                                    <input type="text" name="your-college" value="" size="100" placeholder="Your Requirement, i.e, date"
+                                           data-validation-required-message="Please fill the required field."
+                                           required>
+                                    <div class="help-block"></div>
+                                </div>
+
+                                <div class="col-md-12 form-actions">
+                                    <input class="button" type="submit" value="Submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-
-		<script>
-
-            /**
-             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-
-			 var disqus_config = function () {
-			 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-			 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-			 };
-
-            (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = '//techtrix-1.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-		</script>
 		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	</section>
 <div id="work" style="display:none;">
@@ -275,6 +304,7 @@
 		</div>
 	</div>
 </div>
+</div>
 <!--BEGIN: Footer -->
 <footer class="colors-g page-transition non-preloading">
 	<div class="container scroll-in-animation" data-animation="fadeInDown">
@@ -293,7 +323,7 @@
 			<div class="col-md-3">
 				<h5>Hospitality Partner</h5>
 				<div class="simple">
-					<a href="hospitality.html" target=""><img src="logo/images.png" style="max-width: 80%; height: auto;" class="img-responsive"></a>
+					<a href="#"><img src="logo/images.png" style="max-width: 80%; height: auto;" class="img-responsive"></a>
 				</div>
 				<h5>Radio Partner</h5>
 				<div class="simple">
@@ -324,8 +354,6 @@
 		<a href="#" onclick="$('#teamoverlay').trigger('click')">Our Team</a>
 	</div>
 </footer>
-
-</div>
 <script>
     if (typeof(atob) == "undefined") {
         document.write('<script src="lib/stringencoders-v3.10.3/javascript/base64.js"><\/script>');
