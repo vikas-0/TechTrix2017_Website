@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.rccfest.techtrix"
+        id        = "61557GeekyHub.TechTrix"
         version   = "1.0.0">
 
     <name>TechTrix 2017</name>
@@ -12,9 +12,7 @@
         RCCIIT's Annual Techno-Management Fest
     </description>
 
-    <author href="http://rccfests.in" emai="rcciitfests@gmail.com">
-        GeekyHub
-    </author>
+    <author>GeekyHub</author>
 <platform name="winphone" />
 <preference name="windows-identity-name" value="61557GeekyHub.TechTrix" />
     <!--
