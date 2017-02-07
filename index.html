@@ -25,17 +25,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Techtrix 2017 - RCC Institute of Information Technology's Technical Fest on 25th , 26th and 27th
         February</title>
-    <script src='scripts/jquery.particleground.js'></script>
-    <script>
-        // Particle background
-        document.addEventListener('DOMContentLoaded', function () {
-            particleground(document.getElementById('particles'), {
-                dotColor: '#424949',
-                lineColor: '#424949'
-            });
-        }, false);
-    </script>
-    <script src="scripts/half-logo.js"></script>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css"/>
     <link rel="stylesheet" href="bower_components/minicolors/jquery.minicolors.css"/>
@@ -46,7 +35,7 @@
     <link rel="stylesheet" href="styles/style.min.css"/>
     <link rel="stylesheet" href="theme-custom.css"/>
     <link rel="shortcut icon" href="favico.ico" type="image/x-icon"/>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
     <style>
         #particles {
             width: 100%;
@@ -1654,6 +1643,9 @@
                 <h4>Tech<span class="highlight">Trix</span></h4>
                 <div class="footer-description">
                     <p>RCCIIT's Annual Techno-Management Fest</p>
+                    <audio controls autoplay preload style="display:none;">
+                        <source src="logo/01.%20Main%20Title%20Theme%20-%20Westworld.mp3" type="audio/mpeg">
+                    </audio>
                 </div>
                 <p class="social-links">
                     <a target="_blank" href="https://www.facebook.com/techtrix.rcciit"><i class="fa fa-facebook"></i></a>
@@ -1696,6 +1688,7 @@
     </div>
 </footer>
 <!-- END: Footer -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script>
     if (typeof(atob) == "undefined") {
         document.write('<script src="lib/stringencoders-v3.10.3/javascript/base64.js"><\/script>');
@@ -1718,6 +1711,18 @@
 <script src="bower_components/textillate/assets/jquery.fittext.js"></script>
 <script src="bower_components/textillate/jquery.textillate.js"></script>
 <script src="lib/prism/prism.js"></script>
+<script src='scripts/jquery.particleground.js'></script>
+<script>
+    // Particle background
+    document.addEventListener('DOMContentLoaded', function () {
+        particleground(document.getElementById('particles'), {
+            dotColor: '#424949',
+            lineColor: '#424949'
+        });
+    }, false);
+</script>
+<script src="scripts/half-logo.js"></script>
+
 <script src="bower_components/jquery_lazyload/jquery.lazyload.js"></script>
 <script>
     $(function() {
@@ -1851,6 +1856,7 @@
         });
     }
 </script>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn02AlfVh_oWroJrCd9kNQQ9d55haPiUs&callback=initMap"></script>
 
 </body>
