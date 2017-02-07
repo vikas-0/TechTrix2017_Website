@@ -15,7 +15,7 @@
     <author href="http://rccfests.in" emai="rcciitfests@gmail.com">
         Team TechTrix
     </author>
-
+<platform name="winphone" />
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
