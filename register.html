@@ -228,40 +228,10 @@
                     <div class="text-center scroll-in-animation" data-animation="fadeIn">
                         <form name="registerForm" id="registerForm" action="" netlify>
                             <div class="row">
-                                <div class="col-md-12 control-group">
-                                    <div class="alt-placeholder">Name</div>
-                                    <input type="text" name="your-name" value="" size="40" placeholder="Name"
-                                           data-validation-required-message="Please fill the required field."
-                                           required>
-                                    <div class="help-block"></div>
-                                </div>
-                                <div class="col-md-12 control-group">
-                                    <div class="alt-placeholder">Email</div>
-                                    <input type="email" name="your-email" value="" size="40" placeholder="Email"
-                                           data-validation-required-message="Please fill the required field."
-                                           required>
-                                    <div class="help-block"></div>
-                                </div>
-                                <div class="col-md-12 control-group">
-                                    <div class="alt-placeholder">Contact Number</div>
-                                    <input type="tel" name="your-contact" value="" size="11" placeholder="Contact Number"
-                                           data-validation-required-message="Please fill the required field."
-                                           required>
-                                    <div class="help-block"></div>
-                                </div>
-
-                                <div class="col-md-12 control-group">
-                                    <div class="alt-placeholder">College Name</div>
-                                    <input type="text" name="your-college" value="" size="40" placeholder="College Name"
-                                           data-validation-required-message="Please fill the required field."
-                                           required>
-                                    <div class="help-block"></div>
-                                </div>
-
 								<div class="col-md-12 control-group">
 									<div class="alt-placeholder">Interested In</div>
 									<select  data-tags="true" name="event" data-placeholder="Event Name"
-											required multiple id="multiselect">
+											 required multiple id="multiselect">
 										<option value="Counter Strike 1.6">Counter Strike 1.6</option>
 										<option value="Counter Strike Global Offensive">Counter Strike Global Offensive</option>
 										<option value="Mini Militia">Mini Militia</option>
@@ -299,6 +269,37 @@
 									</select>
 									<div class="help-block"></div>
 								</div>
+
+								<div class="col-md-12 control-group">
+                                    <div class="alt-placeholder">Name</div>
+                                    <input type="text" name="your-name" value="" size="40" placeholder="Name"
+                                           data-validation-required-message="Please fill the required field."
+                                           required>
+                                    <div class="help-block"></div>
+                                </div>
+                                <div class="col-md-12 control-group">
+                                    <div class="alt-placeholder">Email</div>
+                                    <input type="email" name="your-email" value="" size="40" placeholder="Email"
+                                           data-validation-required-message="Please fill the required field."
+                                           required>
+                                    <div class="help-block"></div>
+                                </div>
+                                <div class="col-md-12 control-group">
+                                    <div class="alt-placeholder">Contact Number</div>
+                                    <input type="tel" name="your-contact" value="" size="11" placeholder="Contact Number"
+                                           data-validation-required-message="Please fill the required field."
+                                           required>
+                                    <div class="help-block"></div>
+                                </div>
+
+                                <div class="col-md-12 control-group">
+                                    <div class="alt-placeholder">College Name</div>
+                                    <input type="text" name="your-college" value="" size="40" placeholder="College Name"
+                                           data-validation-required-message="Please fill the required field."
+                                           required>
+                                    <div class="help-block"></div>
+                                </div>
+
 
 								<div class="col-md-12 form-actions">
                                     <input class="button" type="submit" value="Submit">
@@ -354,6 +355,12 @@
             }
 
 		);
+
+        $('#multiselect').keypress(function(e){
+            e.preventDefault(); // prevent form submission
+            // do stuff with the keypress
+            $('#multiselect').submit(); // now, submit the form
+        });
     });
     if (typeof(atob) == "undefined") {
         document.write('<script src="lib/stringencoders-v3.10.3/javascript/base64.js"><\/script>');
