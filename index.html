@@ -35,6 +35,18 @@
     <link rel="stylesheet" href="styles/style.min.css"/>
     <link rel="stylesheet" href="theme-custom.css"/>
     <link rel="shortcut icon" href="favico.ico" type="image/x-icon"/>
+    <script src='scripts/jquery.particleground.js'></script>
+    <script>
+        // Particle background
+        document.addEventListener('DOMContentLoaded', function () {
+            particleground(document.getElementById('particles'), {
+                dotColor: '#424949',
+                lineColor: '#424949'
+            });
+        }, false);
+    </script>
+    <script src="scripts/half-logo.js"></script>
+
 
     <style>
         #particles {
@@ -1658,10 +1670,10 @@
                 <div class="simple">
                     <a href="hospitality.html"><img src="logo/images.png" style="max-width: 80%; height: auto;" class="img-responsive"></a>
                 </div>
-                <!--<h5>Radio Partner</h5>-->
-                <!--<div class="simple">-->
-                    <!--<a href="#"><img src="logo/radio.png" style="max-width: 80%; height: auto;" class="img-responsive"></a>-->
-                <!--</div>-->
+                <h5>Radio Partner</h5>
+                <div class="simple">
+                    <a href="#"><img src="logo/radio.png" style="max-width: 80%; height: auto;" class="img-responsive"></a>
+                </div>
             </div>
             <div class="col-md-3">
                 <h5>Education Partner</h5>
@@ -1711,17 +1723,7 @@
 <script src="bower_components/textillate/assets/jquery.fittext.js"></script>
 <script src="bower_components/textillate/jquery.textillate.js"></script>
 <script src="lib/prism/prism.js"></script>
-<script src='scripts/jquery.particleground.js'></script>
-<script>
-    // Particle background
-    document.addEventListener('DOMContentLoaded', function () {
-        particleground(document.getElementById('particles'), {
-            dotColor: '#424949',
-            lineColor: '#424949'
-        });
-    }, false);
-</script>
-<script src="scripts/half-logo.js"></script>
+
 
 <script src="bower_components/jquery_lazyload/jquery.lazyload.js"></script>
 <script>
