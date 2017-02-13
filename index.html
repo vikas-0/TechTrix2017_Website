@@ -860,7 +860,7 @@
                     RCCIIT's TechTrix is packed with many interesting events. Mainly divided into six categories, namely Gaming, Robotics, Coding, Workshop, Out Of The Box, Kaleidoscope, Geeks and Guest Lectures. Choose an event below, all the sub-events will be listed and description will appear here.
                 </p>
             </div>
-            <div class="gallery colors-h background-solid" data-default-group="none" data-overlay=".gallery-overlay">
+            <div id="eventsDiv" class="gallery colors-h background-solid" data-default-group="none" data-overlay=".gallery-overlay">
                 <div class="container-fluid">
                     <div class="filter">
                         <ul class="nav nav-pills text-center">
@@ -1582,9 +1582,13 @@
                     <div class="col-md-6">
                         <div class="text-right scroll-in-animation" data-animation="fadeInLeft">
                             <p class="big-font uppercase">
-                                Tel: <strong class="highlight">+91  7003070269(Gurupada)</strong><br>
-                                &emsp;<strong class="highlight">+91 8820 099272(Vikas)</strong><br>
-                                &emsp;<strong class="highlight">+91 9832710273(Faizaan)</strong>
+                                Tel: <strong class="highlight">+91 9832710273(Technical Secretary)</strong><br>
+                                &emsp;<strong class="highlight">+91 8296717518(Gaming)</strong><br>
+                                &emsp;<strong class="highlight">+91 8820099272(Coding)</strong><br>
+                                &emsp;<strong class="highlight">+91 9007353187(Robotics)</strong><br>
+                                &emsp;<strong class="highlight">+91 9883935557(Geeks)</strong><br>
+                                 &emsp;<strong class="highlight">+91 9477588826(Out of The Box)</strong><br>
+                                &emsp;<strong class="highlight">+91 7003070269(Kaleidoscope)</strong>
                             </p>
                             <p class="big-font uppercase">
                                 RCC Institute of Information Technology, <br/>
@@ -1696,14 +1700,20 @@
             </div>
         </div>
     </div>
-    <!--<div class="bottom text-center background-5-b">-->
-        <!--&lt;!&ndash;<a href="#!portfolio-item-7.html" class="hover-overlay">&ndash;&gt;-->
-        <!--<a href="#" onclick="$('#teamoverlay').trigger('click')">Our Team</a>-->
-    <!--</div>-->
+
 </footer>
 <!-- END: Footer -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script>
+    var category = (location.hash).replace('#','');
+
+    if(category){
+        console.log('hello');
+        $('#eventsDiv').attr('data-default-group', category);
+        location.hash='#eventsDiv';
+    }
+
+
     if (typeof(atob) == "undefined") {
         document.write('<script src="lib/stringencoders-v3.10.3/javascript/base64.js"><\/script>');
         var atob = function (x) {
