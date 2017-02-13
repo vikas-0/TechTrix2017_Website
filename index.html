@@ -1702,12 +1702,12 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script>
     var category = (location.hash).replace('#','');
-    if(category!=null || category!=''){
+
+    if(category){
+        console.log('hello');
         $('#eventsDiv').attr('data-default-group', category);
         location.hash='#eventsDiv';
     }
-
-
 
 
     if (typeof(atob) == "undefined") {
