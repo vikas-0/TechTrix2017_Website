@@ -1708,7 +1708,7 @@
 <script>
     var category = (location.hash).replace('#','');
 
-    if(category){
+    if(category==='gaming'||category==='robotics'||category==='coding'||category==='workshop'||category==='outofbox'||category==='kaleidoscope'||category==='geeks'||category==='guest'){
         console.log('hello');
         $('#eventsDiv').attr('data-default-group', category);
         location.hash='#eventsDiv';
