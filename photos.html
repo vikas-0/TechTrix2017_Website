@@ -194,7 +194,7 @@
      $.getJSON("behindthelens/data.json", function (json) {
         $.each(json, function (i, item) {
            console.log(i);
-            var com= '<div class="col-md-3 col-sm-3"> <div class="thumbnail"> <a href="behindthelens/photosview.html?id='+i+'"> <img class="lazy" src="behindthelens/'+item.photo+'" alt="'+item.caption+'" style="width:100%; height: auto"> <div class="caption"> <p>'+item.caption+' - '+item.name+'</p> </div> </a> </div> </div>';
+            var com= '<div class="col-md-3 col-sm-3"> <div class="thumbnail"> <a href="behindthelens/photosview.html?id='+i+'"> <img class="img-thumbnail" src="behindthelens/'+item.photo+'" alt="'+item.caption+'" style="width:100%; height: auto"> <div class="caption"> <p>'+item.caption+' - '+item.name+'</p> </div> </a> </div> </div>';
            $('#photosrow').append(com);
 
         });
