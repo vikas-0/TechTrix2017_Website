@@ -49,7 +49,7 @@
 <!--Secondary menu button to be used later-->
 <div class="ext-nav background-95-h page-transition">
     <div class="view half-height">
-        <img alt class="bg static lazy" data-original="images/bg/college.jpg" />
+        <img alt class="bg static lazy" data-original="../images/bg/college.jpg" />
         <div class="content no-top-padding no-bottom-padding  full-height">
             <div class="container-fluid  full-height">
                 <div class="row full-height">
@@ -119,15 +119,15 @@
 
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#home" class="hover-effect">Home</a></li>
-                <li><a href="#event" class="hover-effect">Events</a></li>
+                <li><a href="../index.html#home" class="hover-effect">Home</a></li>
+                <li><a href="../index.html#event" class="hover-effect">Events</a></li>
                 <!--<li><a href="#services" class="hover-effect">Services</a></li>-->
                 <!--<li><a href="#work" class="hover-effect">Gallery</a></li>-->
-                <li><a href="#aboutus" class="hover-effect">About Us</a></li>
+                <li><a href="../index.html#aboutus" class="hover-effect">About Us</a></li>
                 <li><a href="../campusambas.html" class="hover-effect">Be a Campus Ambassador</a></li>
                 <!--<li><a href="#" onclick="$('#teamoverlay').trigger('click')" class="hover-effect">Team</a></li>-->
                 <li><a href="../register.html" class="hover-effect">Register Now</a></li>
-                <li><a href="#contact" class="hover-effect">Reach Us</a></li>
+                <li><a href="../index.html#contact" class="hover-effect">Reach Us</a></li>
 
                 <li class="hidden-xs"><a class="menu-toggle ext-nav-toggle" data-target=".ext-nav" href="#"><span></span></a></li>
             </ul>
@@ -187,10 +187,10 @@
     <div class="view">
         <div class="content no-bottom-padding colors-e background-solid">
             <!-- Start-->
-		<div class="row" id="photosrow" style="padding-bottom: 15px">
+		<div class="row" id="photosrow" style="padding-bottom: 35px">
 
 		</div>
-            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
         </div>
     </div>
 </section>
@@ -213,12 +213,12 @@
 
      $.getJSON("data.json", function (json) {
          var id=getUrlVars()['id'];
-         console.log(id);
+         console.log(location.href);
          item = json[id];
 
 //        $.each(json, function (i, item) {
 //           console.log(item.name);
-            var com= '<div class="col-md-12"> <div> <a href="'+item.photo+'" target="_blank"> <img class="lazy img-responsive" src="'+item.photo+'" alt="'+item.caption+'" style="max-height:150vh; width:auto; margin:0 auto"> <div class="caption"> <p>'+item.caption+' - '+item.name+'</p> </div> </a> </div> </div>';
+            var com= '<div class="col-md-12"> <div> <a href="'+item.photo+'" target="_blank"> <img class="lazy img-responsive" src="'+item.photo+'" alt="'+item.caption+'" style="max-height:150vh; width:auto; margin:0 auto"> <div class="caption"> <p>'+item.caption+' - '+item.name+'</p><div class="fb-like" data-href="'+location.href+'" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div> </div> </a> </div> </div>';
            $('#photosrow').append(com);
 
      });
